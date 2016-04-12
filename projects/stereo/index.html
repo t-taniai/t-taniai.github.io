@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0058)http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Graph Cut based Continuous Stereo Matching using Locally Shared Labels | CVPR 2014</title></head>
+<body>
+    <div id="StayFocusd-infobar" style="display:none;">
+        <img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png">
+        <span id="StayFocusd-infobar-msg"></span>
+        <span id="StayFocusd-infobar-links">
+            <a href="http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/#" id="StayFocusd-infobar-never-show">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/#" id="StayFocusd-infobar-hide">hide once</a>
+        </span>
+    </div>
+    <table style="font-family: Times New Roman,Times,serif; text-align: left; margin-left: auto; margin-right: auto; width: 875px; height: 832px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td colspan="3" rowspan="1">
+                    <div style="text-align: center;"></div>
+
+                    <h1 style="font-weight: normal; text-align: center;" id="journal">
+                        Continuous Stereo Matching using<br>
+                        Local Expansion Moves
+                    </h1>
+                    <div style="text-align: center;">
+                        <big>
+                            <a href="http://taniai.space" target="_blank">Tatsunori Taniai</a><small><small><small>1 </small></small></small>&nbsp;<a href="http://www-infobiz.ist.osaka-u.ac.jp/user/matsushita/" target="_blank">Yasuyuki Matsushita</a><small><small><small>2</small></small></small> &nbsp;<a href="http://www.hci.iis.u-tokyo.ac.jp/~ysato/" target="_blank">Yoichi Sato</a><small><small><small>1</small></small></small> &nbsp;<a href="http://nae-lab.org/~naemura/" target="_blank">Takeshi Naemura</a><small><small><small>1</small></small></small><br>
+                            <small><small><small>1</small></small></small>The University of Tokyo, Japan
+                            <br><small><small><small>2</small></small></small>Osaka University, Japan
+                            <br>
+                            <br>
+                            Technical Report (arXiv 2016)<br>
+                        </big>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" rowspan="1" style="text-align: center;"><p><img src="./local_exp.jpg" alt="Overview" width="798" height="190"></p></td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                </td>
+                <td width="60%" align="left">
+                    <p>
+                        <span style="font-weight: bold;">Abstract</span> -- We present an accurate and efficient stereo matching method using local expansion moves, a new move making scheme
+using graph cuts. The local expansion moves are presented as many alpha-expansions defined for small grid regions. The local expansion
+moves extend the traditional expansion moves by two ways: localization and spatial propagation. By localization, we use different
+candidate alpha-labels according to the locations of local alpha-expansions. By spatial propagation, we design our local alpha-expansions to
+propagate currently assigned labels for nearby regions. With this localization and spatial propagation, our method can efficiently infer
+Markov random field models with a huge or continuous label space using a randomized search scheme. Our local expansion move
+method has several advantages over previous approaches that are based on fusion moves or belief propagation; it produces
+submodular moves deriving a subproblem optimality; it helps find good, smooth, piecewise linear disparity maps; it is suitable for
+parallelization; it can use cost-volume filtering techniques for accelerating the matching cost computations. Our method is evaluated
+using the Middlebury stereo benchmark and shown to have the best performance in sub-pixel accuracy.
+                    </p>
+                </td>
+                <td width="20%">&nbsp;</td>
+            </tr>
+            <tr>
+                <td width="20%"></td>
+                <td width="60%" align="center">
+                    <strong>An extended version of our CVPR 2014 paper below.</strong><br />
+                    <span style="color:#E00000" >Now our new CPU-based algorithm is 2.1x faster than our previous CPU+GPU implementation with comparable or greater accuracy.<br />
+                    We have a plan to release our code written by C++ and OpenCV 3.0 in future.</span>
+                </td>
+                <td width="20%"></td>
+            </tr>
+            <tr>
+                <td width="20%"></td>
+                <td width="60%" align="left">
+                    <br />
+                    <strong>Summary of Changes:</strong>
+                    <ul style="margin-top:0">
+                        <li>Theoretical verification on the preferability for piecewise planar scenes.</li>
+                        <li>Proof of the subproblem optimality (submodularity).</li>
+                        <li>Speed-up by efficient parallelization on CPU/GPU.</li>
+                        <li>Speed-up by incorporating fast cost filtering.</li>
+                        <li>Much clearer algorithm explanations.</li>
+                    </ul>
+                </td>
+                <td width="20%"></td>
+            </tr>
+            <tr>
+                <td colspan="3" rowspan="1" style="text-align: center;">[<a href="http://arxiv.org/abs/1603.08328" target="_blank">Link to arXiv</a>]</td>
+            </tr>
+
+            <tr>
+                <td colspan="3" rowspan="1">
+                    <p>&nbsp;</p>
+                    <hr />
+                    <div style="text-align: center;"></div>
+
+                    <h1 style="font-weight: normal; text-align: center;" id="conference">
+                        Graph Cut based Continuous Stereo Matching<br>
+                        using<br>
+                        Locally Shared Labels<small>
+                        </small>
+                    </h1>
+                    <div style="text-align: center;">
+                        <big>
+                            <a href="http://taniai.space" target="_blank">Tatsunori Taniai</a><small><small><small>1 </small></small></small>&nbsp;<a href="http://www-infobiz.ist.osaka-u.ac.jp/user/matsushita/" target="_blank">
+                                Yasuyuki
+                                Matsushita
+                            </a><small><small><small>2</small></small></small> &nbsp;<a href="http://nae-lab.org/~naemura/" target="_blank">Takeshi Naemura</a><small><small><small>1</small></small></small><br>
+                            <small><small><small>1</small></small></small>The University of Tokyo, Japan
+                            <br><small><small><small>2</small></small></small>Microsoft
+                            Research Asia, China
+                        </big><big>
+                            <br>
+                            <br>
+                            CVPR 2014<br>
+                        </big>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" rowspan="1" style="text-align: center;"><p><img src="./process2.jpg" alt="Overview" width="785" height="290"></p></td>
+            </tr>
+            <tr>
+                <td width="20%">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                </td>
+                <td width="60%" align="left">
+                    <p>
+                        <span style="font-weight: bold;">Abstract</span> --
+                        We present an accurate and efficient stereo matching method using locally shared labels, a new labeling scheme that enables spatial propagation in MRF inference using graph cuts. They give each pixel and region a set of candidate disparity labels, which are randomly initialized, spatially propagated, and refined for ontinuous disparity estimation. We cast the selection and propagation of locally defined disparity labels as fusion-based energy minimization. The joint use of graph cuts and locally shared labels has advantages over previous approaches based on fusion moves or belief propagation; it produces submodular moves deriving a subproblem optimality; enables powerful randomized search; helps to find good smooth, locally planar disparity maps, which are reasonable for natural scenes; allows parallel computation of both unary and pairwise costs. Our method is evaluated using the Middlebury stereo benchmark and achieves first place in sub-pixel accuracy.
+                    </p>
+                </td>
+                <td width="20%">&nbsp;</td>
+            </tr>
+            <tr>
+                <td height="150" colspan="3" align="center">
+                    <strong>Code will be made availabe as our journal work with further improvements!</strong><br>
+                    Thank you very much for so many requests for our code.<br>
+                    Unfortunately, the original code is  not distributable due to lisence and heavy GPU dependency issues.<br>
+                    Our new C++ implementation for  journal work solves these issues (OpenCV 3.0 is the only dependency).<br>
+                    The descriptions of our algorithm would be also much easier to understand.<br>
+                    We have a plan to release the code once our journal is published.
+                    Sorry for the inconvenience.<br>
+                    Tatsunori Taniai, November 5th, 2015.<br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center"><a href="./cvpr2014-stereo_final.pdf"><img src="./paper_thumbnail.jpg" alt="Paper PDF" width="800" height="129"></a></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center"><a href="./cvpr2014-stereo-poster.pdf"><img src="./poster_thumbnail.jpg" alt="Poster PDF" width="400" height="196"></a></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">
+                    <br /><h2>Spotlight Video</h2><p>
+                        <div id="mediaplayer">Please enable javascript</div>
+                        <script type="text/javascript" src="../../js/mediaplayer/jwplayer.js"></script>
+                        <script type="text/javascript">
+                            jwplayer("mediaplayer").setup({
+                                flashplayer: "../../js/mediaplayer/player.swf",
+                                file: "video-spotlight-378.mp4",
+                                width: 800,
+                                height: 450
+                            });
+                        </script>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">
+                    <p>&nbsp;</p>
+                    <h2>
+                        1st rank at the Middlebury  benchmark<br>
+                        (0.5 pixel error theshold)
+                    </h2>
+                    <p><img src="ranking.jpg" alt="Benchmark" width="800" height="198"></p>
+                    <h2>Additional results without post-processing</h2>
+                    <p><img src="results.jpg" alt="Results" width="800" height="945"></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <blockquote>
+        <p>
+            <br style="font-family: Times New Roman,Times,serif;">
+        </p>
+    </blockquote>
+</body></html>

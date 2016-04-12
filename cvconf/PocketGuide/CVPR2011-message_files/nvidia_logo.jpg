@@ -1,0 +1,336 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+      <meta charset="utf-8"></meta>
+      <title>CUDA Toolkit Documentation</title>
+      <link rel="stylesheet" type="text/css" href="common/formatting/site.css"></link>
+      <!--[if lt IE 9]>
+        <script src="common/formatting/html5shiv-printshiv.min.js"></script>
+        <![endif]-->
+      <script type="text/javascript" charset="utf-8" src="../common/scripts/tynt/tynt.js"></script>
+      <script type="text/javascript" charset="utf-8" src="common/formatting/jquery.min.js"></script>
+      <script type="text/javascript" charset="utf-8" src="common/formatting/jquery.ba-hashchange.min.js"></script>
+      <script type="text/javascript" src="search/htmlFileList.js"></script>
+      <script type="text/javascript" src="search/htmlFileInfoList.js"></script>
+      <script type="text/javascript" src="search/nwSearchFnt.min.js"></script>
+      <script type="text/javascript" src="search/stemmers/en_stemmer.min.js"></script>
+      <script type="text/javascript" src="search/index-1.js"></script>
+      <script type="text/javascript" src="search/index-2.js"></script>
+      <script type="text/javascript" src="search/index-3.js"></script>
+      </head>
+   <body>
+      <header id="header">
+         <span id="company">NVIDIA</span><span id="site-title">CUDA Toolkit Documentation</span><form id="search" method="get" action="search">
+            <input type="text" name="search-text"></input><fieldset id="search-location">
+               <legend>Search In:</legend>
+               <label><input type="radio" name="search-type" value="site"></input>Entire Site</label>
+               <label><input type="radio" name="search-type" value="document"></input>Just This Document</label></fieldset>
+            <button type="reset">clear search</button>
+            <button id="submit" type="submit">search</button></form>
+      </header>
+      <div id="site-content">
+         <nav id="site-nav">
+            <div class="category"><a href="#">CUDA Toolkit
+                  v6.5</a></div>
+            <ul>
+               <li><a href="cuda-toolkit-release-notes/index.html" title="The Release Notes for the CUDA Toolkit.">Release Notes</a></li>
+               <li><a href="eula/index.html" title="The End User License Agreements for the NVIDIA CUDA Toolkit, the NVIDIA CUDA Samples, the NVIDIA Display Driver, and NVIDIA NSight (Visual Studio Edition).">EULA</a></li>
+            </ul>
+            <div class="category"><a href="#getting-started-guides">Getting Started Guides</a></div>
+            <ul>
+               <li><a href="cuda-getting-started-guide-for-linux/index.html" title="This guide discusses how to install and check for correct operation of the CUDA Development Tools on GNU/Linux systems.">Getting Started Linux</a></li>
+               <li><a href="cuda-getting-started-guide-for-mac-os-x/index.html" title="This guide discusses how to install and check for correct operation of the CUDA Development Tools on Mac OS X systems.">Getting Started Mac OS X</a></li>
+               <li><a href="cuda-getting-started-guide-for-microsoft-windows/index.html" title="This guide discusses how to install and check for correct operation of the CUDA Development Tools on Microsoft Windows systems.">Getting Started Windows</a></li>
+            </ul>
+            <div class="category"><a href="#programming-guides">Programming Guides</a></div>
+            <ul>
+               <li><a href="cuda-c-programming-guide/index.html" title="This guide provides a detailed discussion of the CUDA programming model and programming interface. It then describes the hardware implementation, and provides guidance on how to achieve maximum performance. The Appendixes include a list of all CUDA-enabled devices, detailed description of all extensions to the C language, listings of supported mathematical functions, C++ features supported in host and device code, details on texture fetching, technical specifications of various devices, and concludes by introducing the low-level driver API.">Programming Guide</a></li>
+               <li><a href="cuda-c-best-practices-guide/index.html" title="This guide presents established parallelization and optimization techniques and explains coding metaphors and idioms that can greatly simplify programming for CUDA-capable GPU architectures. The intent is to provide guidelines for obtaining the best performance from NVIDIA GPUs using the CUDA Toolkit.">Best Practices Guide</a></li>
+               <li><a href="maxwell-compatibility-guide/index.html" title="This application note is intended to help developers ensure that their NVIDIA CUDA applications will run properly on GPUs based on the NVIDIA Maxwell Architecture. This document provides guidance to ensure that your software applications are compatible with Maxwell.">Maxwell Compatibility Guide</a></li>
+               <li><a href="kepler-tuning-guide/index.html" title="Kepler is NVIDIA's 3rd-generation architecture for CUDA compute applications. Applications that follow the best practices for the Fermi architecture should typically see speedups on the Kepler architecture without any code changes. This guide summarizes the ways that applications can be fine-tuned to gain additional speedups by leveraging Kepler architectural features.">Kepler Tuning Guide</a></li>
+               <li><a href="maxwell-tuning-guide/index.html" title="Maxwell is NVIDIA's 4th-generation architecture for CUDA compute applications. Applications that follow the best practices for the Kepler architecture should typically see speedups on the Maxwell architecture without any code changes. This guide summarizes the ways that applications can be fine-tuned to gain additional speedups by leveraging Maxwell architectural features.">Maxwell Tuning Guide</a></li>
+               <li><a href="parallel-thread-execution/index.html" title="This guide provides detailed instructions on the use of PTX, a low-level parallel thread execution virtual machine and instruction set architecture (ISA). PTX exposes the GPU as a data-parallel computing device.">PTX ISA</a></li>
+               <li><a href="optimus-developer-guide/index.html" title="This document explains how CUDA APIs can be used to query for GPU capabilities in NVIDIA Optimus systems.">Developer Guide for Optimus</a></li>
+               <li><a href="video-decoder/index.html" title="This document provides the video decoder API specification and the format conversion and display using DirectX or OpenGL following decode.">Video Decoder</a></li>
+               <li><a href="inline-ptx-assembly/index.html" title="This document shows how to inline PTX (parallel thread execution) assembly language statements into CUDA code. It describes available assembler statement parameters and constraints, and the document also provides a list of some pitfalls that you may encounter.">Inline PTX Assembly</a></li>
+            </ul>
+            <div class="category"><a href="#cuda-api-references">CUDA API References</a></div>
+            <ul>
+               <li><a href="cuda-runtime-api/index.html" title="The CUDA runtime API.">CUDA Runtime API</a></li>
+               <li><a href="cuda-driver-api/index.html" title="The CUDA driver API.">CUDA Driver API</a></li>
+               <li><a href="cuda-math-api/index.html" title="The CUDA math API.">CUDA Math API</a></li>
+               <li><a href="cublas/index.html" title="The cuBLAS library is an implementation of BLAS (Basic Linear Algebra Subprograms) on top of the NVIDIA CUDA runtime. It allows the user to access the computational resources of NVIDIA Graphical Processing Unit (GPU), but does not auto-parallelize across multiple GPUs.">cuBLAS</a></li>
+               <li><a href="nvblas/index.html" title="The NVBLAS library is a multi-GPUs accelerated drop-in BLAS (Basic Linear Algebra Subprograms) built on top of the NVIDIA cuBLAS Library.">NVBLAS</a></li>
+               <li><a href="cufft/index.html" title="The cuFFT library user guide.">cuFFT</a></li>
+               <li><a href="curand/index.html" title="The cuRAND library user guide.">cuRAND</a></li>
+               <li><a href="cusparse/index.html" title="The cuSPARSE library user guide.">cuSPARSE</a></li>
+               <li><a href="npp/index.html" title="NVIDIA NPP is a library of functions for performing CUDA accelerated processing. The initial set of functionality in the library focuses on imaging and video processing and is widely applicable for developers in these areas. NPP will evolve over time to encompass more of the compute heavy tasks in a variety of problem domains. The NPP library is written to maximize flexibility, while maintaining high performance.">NPP</a></li>
+               <li><a href="thrust/index.html" title="The Thrust getting started guide.">Thrust</a></li>
+               <li><a href="cuda-samples/index.html" title="This document contains a complete listing of the code samples that are included with the NVIDIA CUDA Toolkit. It describes each code sample, lists the minimum GPU specification, and provides links to the source code and white papers if available.">CUDA Samples</a></li>
+            </ul>
+            <div class="category"><a href="#tools">Tools</a></div>
+            <ul>
+               <li><a href="cuda-compiler-driver-nvcc/index.html" title="This document is a reference guide on the use of the CUDA compiler driver nvcc. Instead of being a specific CUDA compilation driver, nvcc mimics the behavior of the GNU compiler gcc, accepting a range of conventional compiler options, such as for defining macros and include/library paths, and for steering the compilation process.">NVCC</a></li>
+               <li><a href="cuda-gdb/index.html" title="The NVIDIA tool for debugging CUDA applications running on Linux and Mac, providing developers with a mechanism for debugging CUDA applications running on actual hardware. CUDA-GDB is an extension to the x86-64 port of GDB, the GNU Project debugger.">CUDA-GDB</a></li>
+               <li><a href="cuda-memcheck/index.html" title="CUDA-MEMCHECK is a suite of run time tools capable of precisely detecting out of bounds and misaligned memory access errors, checking device allocation leaks, reporting hardware errors and identifying shared memory data access hazards.">CUDA-MEMCHECK</a></li>
+               <li><a href="nsight-eclipse-edition-getting-started-guide/index.html" title="Nsight Eclipse Edition getting started guide">Nsight Eclipse Edition</a></li>
+               <li><a href="profiler-users-guide/index.html" title="This is the guide to the Profiler.">Profiler</a></li>
+               <li><a href="cuda-binary-utilities/index.html" title="The application notes for cuobjdump, nvdisasm, and nvprune.">CUDA Binary Utilities</a></li>
+            </ul>
+            <div class="category"><a href="#white-papers">White Papers</a></div>
+            <ul>
+               <li><a href="floating-point/index.html" title="A number of issues related to floating point accuracy and compliance are a frequent source of confusion on both CPUs and GPUs. The purpose of this white paper is to discuss the most common issues related to NVIDIA GPUs and to supplement the documentation in the CUDA C Programming Guide.">Floating Point and IEEE 754</a></li>
+               <li><a href="incomplete-lu-cholesky/index.html" title="In this white paper we show how to use the cuSPARSE and cuBLAS libraries to achieve a 2x speedup over CPU in the incomplete-LU and Cholesky preconditioned iterative methods. We focus on the Bi-Conjugate Gradient Stabilized and Conjugate Gradient iterative methods, that can be used to solve large sparse nonsymmetric and symmetric positive definite linear systems, respectively. Also, we comment on the parallel sparse triangular solve, which is an essential building block in these algorithms.">Incomplete-LU and Cholesky Preconditioned Iterative Methods</a></li>
+            </ul>
+            <div class="category"><a href="#compiler-sdk">Compiler SDK</a></div>
+            <ul>
+               <li><a href="libnvvm-api/index.html" title="The libNVVM API.">libNVVM API</a></li>
+               <li><a href="libdevice-users-guide/index.html" title="The libdevice library is an LLVM bitcode library that implements common functions for GPU kernels.">libdevice User's Guide</a></li>
+               <li><a href="nvvm-ir-spec/index.html" title="NVVM IR is a compiler IR (internal representation) based on the LLVM IR. The NVVM IR is designed to represent GPU compute kernels (for example, CUDA kernels). High-level language front-ends, like the CUDA C compiler front-end, can generate NVVM IR.">NVVM IR</a></li>
+            </ul>
+            <div class="category"><a href="#miscellaneous">Miscellaneous</a></div>
+            <ul>
+               <li><a href="cupti/index.html" title="The CUPTI API.">CUPTI</a></li>
+               <li><a href="debugger-api/index.html" title="The CUDA debugger API.">Debugger API</a></li>
+               <li><a href="gpudirect-rdma/index.html" title="A technology introduced in Kepler-class GPUs and CUDA 5.0, enabling a direct path for communication between the GPU and a third-party peer device on the PCI Express bus when the devices share the same upstream root complex using standard features of PCI Express. This document introduces the technology and describes the steps necessary to enable a GPUDirect RDMA connection to NVIDIA GPUs within the Linux device driver model.">GPUDirect RDMA</a></li>
+            </ul>
+         </nav>
+         <div id="resize-nav"></div>
+         <nav id="search-results">
+            <h2>Search Results</h2>
+            <ol></ol>
+         </nav>
+         <div id="contents-container">
+            <article id="contents">
+               <div id="release-info" align="right">CUDA Toolkit Documentation
+                  -
+                  v6.5
+                  (<a href="https://developer.nvidia.com/cuda-toolkit-archive">older</a>)
+                  -
+                  Last updated August 1, 2014
+                  -
+                  <a href="mailto:cudatools@nvidia.com?subject=CUDA Toolkit Documentation Feedback: CUDA Toolkit Documentation">Send Feedback</a>
+                  -
+                  <span class="st_facebook"></span><span class="st_twitter"></span><span class="st_linkedin"></span><span class="st_reddit"></span><span class="st_slashdot"></span><span class="st_tumblr"></span><span class="st_sharethis"></span></div>
+               <header>
+                  <h1>CUDA Toolkit Documentation
+                     v6.5
+                  </h1>
+               </header>
+               <hr></hr>
+               <dl class="landing-page">
+                  <dt><a href="cuda-toolkit-release-notes/index.html">Release Notes</a></dt>
+                  <dd>The Release Notes for the CUDA Toolkit.</dd>
+                  <dt><a href="eula/index.html">EULA</a></dt>
+                  <dd>The End User License Agreements for the NVIDIA CUDA
+                     Toolkit, the NVIDIA CUDA Samples, the NVIDIA Display Driver, and NVIDIA NSight (Visual Studio Edition).
+                  </dd>
+               </dl>
+               <h2 id="getting-started-guides">Getting Started Guides</h2>
+               <hr></hr>
+               <dl class="landing-page">
+                  <dt><a href="cuda-getting-started-guide-for-linux/index.html">Getting Started Linux</a></dt>
+                  <dd>This guide discusses how to install and check for correct operation of the CUDA Development Tools on GNU/Linux systems.</dd>
+                  <dt><a href="cuda-getting-started-guide-for-mac-os-x/index.html">Getting Started Mac OS X</a></dt>
+                  <dd>This guide discusses how to install and check for correct operation of the CUDA Development Tools on Mac OS X systems.</dd>
+                  <dt><a href="cuda-getting-started-guide-for-microsoft-windows/index.html">Getting Started Windows</a></dt>
+                  <dd>This guide discusses how to install and check for correct operation of the CUDA Development Tools on Microsoft Windows systems.</dd>
+               </dl>
+               <h2 id="programming-guides">Programming Guides</h2>
+               <hr></hr>
+               <dl class="landing-page">
+                  <dt><a href="cuda-c-programming-guide/index.html">Programming Guide</a></dt>
+                  <dd>This guide provides a detailed discussion of
+                     the CUDA programming model and programming interface. It then describes
+                     the hardware implementation, and provides guidance on how to achieve
+                     maximum performance. The Appendixes include a list of all CUDA-enabled
+                     devices, detailed description of all extensions to the C language,
+                     listings of supported mathematical functions, C++ features supported in
+                     host and device code, details on texture fetching, technical
+                     specifications of various devices, and concludes by introducing the
+                     low-level driver API.
+                  </dd>
+                  <dt><a href="cuda-c-best-practices-guide/index.html">Best Practices Guide</a></dt>
+                  <dd>This guide presents established
+                     parallelization and optimization techniques and explains coding
+                     metaphors and idioms that can greatly simplify programming for
+                     CUDA-capable GPU architectures. The intent is to provide guidelines for
+                     obtaining the best performance from NVIDIA GPUs using the CUDA
+                     Toolkit.
+                  </dd>
+                  <dt><a href="maxwell-compatibility-guide/index.html">Maxwell Compatibility Guide</a></dt>
+                  <dd>This application note is intended to help
+                     developers ensure that their NVIDIA CUDA applications will run
+                     properly on GPUs based on the NVIDIA Maxwell Architecture. This
+                     document provides guidance to ensure that your software applications are
+                     compatible with Maxwell.
+                  </dd>
+                  <dt><a href="kepler-tuning-guide/index.html">Kepler Tuning Guide</a></dt>
+                  <dd>Kepler is NVIDIA's 3rd-generation
+                     architecture for CUDA compute applications. Applications that follow
+                     the best practices for the Fermi architecture should typically
+                     see speedups on the Kepler architecture without any code changes. This
+                     guide summarizes the ways that applications can be fine-tuned to gain
+                     additional speedups by leveraging Kepler architectural features.
+                  </dd>
+                  <dt><a href="maxwell-tuning-guide/index.html">Maxwell Tuning Guide</a></dt>
+                  <dd>Maxwell is NVIDIA's 4th-generation
+                     architecture for CUDA compute applications. Applications that follow
+                     the best practices for the Kepler architecture should typically see
+                     speedups on the Maxwell architecture without any code changes. This
+                     guide summarizes the ways that applications can be fine-tuned to gain
+                     additional speedups by leveraging Maxwell architectural features.
+                  </dd>
+                  <dt><a href="parallel-thread-execution/index.html">PTX ISA</a></dt>
+                  <dd>This guide provides detailed instructions on the
+                     use of PTX, a low-level parallel thread execution virtual machine and
+                     instruction set architecture (ISA). PTX exposes the GPU as a
+                     data-parallel computing device.
+                  </dd>
+                  <dt><a href="optimus-developer-guide/index.html">Developer Guide for Optimus</a></dt>
+                  <dd>This document explains how CUDA APIs can be used to query for GPU capabilities in NVIDIA Optimus systems.</dd>
+                  <dt><a href="video-decoder/index.html">Video Decoder</a></dt>
+                  <dd>This document provides the video decoder API specification and the format conversion and display using DirectX or OpenGL following
+                     decode.
+                  </dd>
+                  <dt><a href="inline-ptx-assembly/index.html">Inline PTX Assembly</a></dt>
+                  <dd>This document shows how to inline PTX (parallel
+                     thread execution) assembly language statements into CUDA code. It
+                     describes available assembler statement parameters and constraints, and
+                     the document also provides a list of some pitfalls that you may
+                     encounter.
+                     
+                  </dd>
+               </dl>
+               <h2 id="cuda-api-references">CUDA API References</h2>
+               <hr></hr>
+               <dl class="landing-page">
+                  <dt><a href="cuda-runtime-api/index.html">CUDA Runtime API</a></dt>
+                  <dd>The CUDA runtime API.</dd>
+                  <dt><a href="cuda-driver-api/index.html">CUDA Driver API</a></dt>
+                  <dd>The CUDA driver API.</dd>
+                  <dt><a href="cuda-math-api/index.html">CUDA Math API</a></dt>
+                  <dd>The CUDA math API.</dd>
+                  <dt><a href="cublas/index.html">cuBLAS</a></dt>
+                  <dd>The cuBLAS library is an implementation of BLAS (Basic Linear Algebra Subprograms) on top of the NVIDIA CUDA runtime. It allows
+                     the user to access the computational resources of NVIDIA Graphical Processing Unit (GPU), but does not auto-parallelize across
+                     multiple GPUs.
+                  </dd>
+                  <dt><a href="nvblas/index.html">NVBLAS</a></dt>
+                  <dd>The NVBLAS library is a multi-GPUs accelerated drop-in BLAS (Basic Linear Algebra Subprograms) built on top of the NVIDIA
+                     cuBLAS Library. 
+                  </dd>
+                  <dt><a href="cufft/index.html">cuFFT</a></dt>
+                  <dd>The cuFFT library user guide.</dd>
+                  <dt><a href="curand/index.html">cuRAND</a></dt>
+                  <dd>The cuRAND library user guide.</dd>
+                  <dt><a href="cusparse/index.html">cuSPARSE</a></dt>
+                  <dd>The cuSPARSE library user guide.</dd>
+                  <dt><a href="npp/index.html">NPP</a></dt>
+                  <dd>NVIDIA NPP is a library of functions for performing CUDA accelerated
+                     processing. The initial set of functionality in the library focuses on
+                     imaging and video processing and is widely applicable for developers in
+                     these areas. NPP will evolve over time to encompass more of the compute
+                     heavy tasks in a variety of problem domains. The NPP library is written
+                     to maximize flexibility, while maintaining high performance.
+                  </dd>
+                  <dt><a href="thrust/index.html">Thrust</a></dt>
+                  <dd>The Thrust getting started guide.</dd>
+                  <dt><a href="cuda-samples/index.html">CUDA Samples</a></dt>
+                  <dd>This document contains a complete listing of the code samples that are
+                     included with the NVIDIA CUDA Toolkit. It describes each code sample,
+                     lists the minimum GPU specification, and provides links to the source
+                     code and white papers if available.
+                  </dd>
+               </dl>
+               <h2 id="tools">Tools</h2>
+               <hr></hr>
+               <dl class="landing-page">
+                  <dt><a href="cuda-compiler-driver-nvcc/index.html">NVCC</a></dt>
+                  <dd>This document is a reference guide on the use of the CUDA compiler driver nvcc. Instead of being a specific CUDA compilation
+                     driver, nvcc mimics the behavior of the GNU compiler gcc, accepting a range of conventional compiler options, such as for
+                     defining macros and include/library paths, and for steering the compilation process.
+                  </dd>
+                  <dt><a href="cuda-gdb/index.html">CUDA-GDB</a></dt>
+                  <dd>The NVIDIA tool for debugging CUDA applications running on Linux and Mac, providing developers with a mechanism for debugging
+                     CUDA applications running on actual hardware. CUDA-GDB is an extension to the x86-64 port of GDB, the GNU Project debugger.
+                  </dd>
+                  <dt><a href="cuda-memcheck/index.html">CUDA-MEMCHECK</a></dt>
+                  <dd>CUDA-MEMCHECK is a suite of run time tools capable of precisely detecting
+                     out of bounds and misaligned memory access errors, checking device
+                     allocation leaks, reporting hardware errors and identifying shared memory data
+                     access hazards.
+                     
+                  </dd>
+                  <dt><a href="nsight-eclipse-edition-getting-started-guide/index.html">Nsight Eclipse Edition</a></dt>
+                  <dd>Nsight Eclipse Edition getting started guide</dd>
+                  <dt><a href="profiler-users-guide/index.html">Profiler</a></dt>
+                  <dd>This is the guide to the Profiler.</dd>
+                  <dt><a href="cuda-binary-utilities/index.html">CUDA Binary Utilities</a></dt>
+                  <dd>The application notes for cuobjdump, nvdisasm, and nvprune.</dd>
+               </dl>
+               <h2 id="white-papers">White Papers</h2>
+               <hr></hr>
+               <dl class="landing-page">
+                  <dt><a href="floating-point/index.html">Floating Point and IEEE 754</a></dt>
+                  <dd>A number of issues related to floating point accuracy and compliance are
+                     a frequent source of confusion on both CPUs and GPUs. The purpose of this
+                     white paper is to discuss the most common issues related to NVIDIA GPUs
+                     and to supplement the documentation in the CUDA C Programming Guide.
+                  </dd>
+                  <dt><a href="incomplete-lu-cholesky/index.html">Incomplete-LU and Cholesky Preconditioned Iterative Methods</a></dt>
+                  <dd>In this white paper we show how to use the
+                     cuSPARSE and cuBLAS libraries to achieve a 2x speedup over CPU in the
+                     incomplete-LU and Cholesky preconditioned iterative methods. We focus on
+                     the Bi-Conjugate Gradient Stabilized and Conjugate Gradient iterative
+                     methods, that can be used to solve large sparse nonsymmetric and
+                     symmetric positive definite linear systems, respectively. Also, we
+                     comment on the parallel sparse triangular solve, which is an essential
+                     building block in these algorithms.
+                  </dd>
+               </dl>
+               <h2 id="compiler-sdk">Compiler SDK</h2>
+               <hr></hr>
+               <dl class="landing-page">
+                  <dt><a href="libnvvm-api/index.html">libNVVM API</a></dt>
+                  <dd>The libNVVM API.</dd>
+                  <dt><a href="libdevice-users-guide/index.html">libdevice User's Guide</a></dt>
+                  <dd>The libdevice library is an LLVM bitcode library
+                     that implements common functions for GPU kernels.
+                  </dd>
+                  <dt><a href="nvvm-ir-spec/index.html">NVVM IR</a></dt>
+                  <dd>NVVM IR is a compiler IR (internal
+                     representation) based on the LLVM IR. The NVVM IR is designed to
+                     represent GPU compute kernels (for example, CUDA kernels). High-level
+                     language front-ends, like the CUDA C compiler front-end, can generate
+                     NVVM IR.
+                  </dd>
+               </dl>
+               <h2 id="miscellaneous">Miscellaneous</h2>
+               <hr></hr>
+               <dl class="landing-page">
+                  <dt><a href="cupti/index.html">CUPTI</a></dt>
+                  <dd>The CUPTI API.</dd>
+                  <dt><a href="debugger-api/index.html">Debugger API</a></dt>
+                  <dd>The CUDA debugger API.</dd>
+                  <dt><a href="gpudirect-rdma/index.html">GPUDirect RDMA</a></dt>
+                  <dd>A technology introduced in Kepler-class GPUs and CUDA 5.0,
+                     enabling a direct path for communication between the GPU and a third-party peer
+                     device on the PCI Express bus when the devices share the same upstream
+                     root complex using standard features of PCI Express. This document
+                     introduces the technology and describes the steps necessary to enable a
+                     GPUDirect RDMA connection to NVIDIA GPUs within the Linux device
+                     driver model.
+                  </dd>
+               </dl>
+               <hr id="contents-end"></hr>
+            </article>
+         </div>
+      </div>
+      <script language="JavaScript" type="text/javascript" charset="utf-8" src="common/formatting/common.min.js"></script>
+      <script language="JavaScript" type="text/javascript" charset="utf-8" src="common/scripts/google-analytics/google-analytics-write.js"></script>
+      <script language="JavaScript" type="text/javascript" charset="utf-8" src="common/scripts/google-analytics/google-analytics-tracker.js"></script>
+      <script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher: "998dc202-a267-4d8e-bce9-14debadb8d92", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script></body>
+</html>

@@ -1,0 +1,429 @@
+@charset "UTF-8";
+
+/* ========BASIC======== */
+html {
+   overflow-y:scroll;
+}
+
+body {
+   margin:0;
+   padding:0;
+   line-height:1.6;
+   letter-spacing:1px;
+   font-family:Verdana, Helvetica, sans-serif;
+   font-size:13px;
+   color:#333;
+}
+
+br {
+   letter-spacing:normal;
+}
+
+a {
+   color:#98534B;
+   text-decoration:none;
+}
+
+a:hover {
+   text-decoration:underline;
+}
+
+img {
+   border:0;
+   vertical-align:bottom;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   margin:0;
+}
+
+
+/* ========TEMPLATE LAYOUT======== */
+#top {
+   width:780px;
+   margin:0 auto;
+}
+
+#header {
+   position:relative;
+   width:780px;
+}
+
+#pr {
+   width:780px;
+}
+
+#gnavi {
+   position:absolute;
+   bottom:5px;
+   right:0;
+}
+
+#menu {
+   float:left;
+   width:780px;
+   margin-bottom:20px;
+}
+
+#icatch {
+   width:780px;
+   margin:0 auto;
+   background:#fff;
+}
+
+#contents {
+   width:780px;
+   margin:0 auto;
+   padding:10px 0 ;
+   background:#fff;
+}
+
+#main {
+   float:right;
+   width:540px;
+}
+
+#sub {
+   float:left;
+   width:200px;
+}
+
+#info {
+   float:left;
+   width:385px;
+}
+
+#news {
+   float:right;
+   width:385px;
+}
+
+#pageTop {
+   clear:both;
+}
+
+#footMenu {
+   width:780px;
+   clear:both;
+   overflow:hidden;
+   padding:10px 0;
+}
+
+#footer {
+   width:780px;
+   clear:both;
+   padding:10px 0;
+}
+
+
+/* ========HEADER CUSTOMIZE======== */
+#header h1 {
+   margin:0;
+   padding:10px 0;
+   font-size:24px;
+   color:#333;
+}
+
+#header h1 a {
+   color:#9B0000;
+}
+
+#header h1 a:hover {
+   color:#D30000;
+   text-decoration:none;
+}
+
+/* PR CUSTOMIZE */
+#header #pr p {
+   margin:0;
+}
+
+/* GNAVI CUSTOMIZE */
+#header #gnavi ul {
+   list-style:none;
+}
+
+#header #gnavi li {
+   float:left;
+   font-size:12px;
+   margin-left:15px;
+}
+
+#header #gnavi li a {
+   padding-left:15px;
+   background:url(../images/bg_gnavi.gif) 0 50% no-repeat;
+}
+
+
+/* ========MENU CUSTOMIZE======== */
+#menu ul {
+   float:left;
+   margin:0;
+   padding:0;
+}
+
+#menu li {
+   margin:0;
+   padding:0;
+   float:left;
+   font-size:11px;
+   color:#333;
+   text-align:center;
+   list-style-type:none;
+}
+
+#menu li span {
+   font-family:verdana;
+   font-size:13px;
+   color:#fff;
+}
+
+#menu li a {
+   display:block;
+   width:130px;
+   padding:10px 0;
+   color:#FFF1A4;
+   background:url(../images/bg_menu.gif) 0 100% repeat-x;
+}
+
+#menu li a:hover {
+   text-decoration:none;
+   background:url(../images/bg_menu.gif) 100% 100% repeat-x;
+}
+
+
+/* ========INFO CUSTOMIZE======== */
+#info h2 {
+   background:#98534B;
+   font-size:16px;
+   color:#fff;
+   padding:2px 5px 0px 5px;
+   border-bottom:3px solid #823C34;
+}
+
+#info dl dt {
+   clear:left;
+   float:left;
+   width:7em;
+   padding:10px 0.5em;
+}
+
+#info dl dd {
+   margin-left:0;
+   padding:10px 0.5em 10px 8em;
+   background:#fff url(../images/bg_info_line.gif) 0 100% repeat-x;
+}
+
+
+/* ========NEWS CUSTOMIZE======== */
+#news p {
+   margin:0;
+   padding:0 0 1em 0;
+}
+
+#news h2 {
+   background:#422F28;
+   font-size:16px;
+   color:#fff;
+   padding:5px;
+}
+
+
+/* ========MAIN CONTENTS CUSTOMIZE======== */
+#main a {
+   color:#9B0000;
+}
+
+#main a:hover {
+   color:#9B0000;
+}
+
+#main h2 {
+   margin:0 0 10px 0;
+   padding:0;
+   font-size:16px;
+   color:#823C34;
+   line-height:1.2;
+   border-bottom:3px solid #823C34;
+}
+
+#main h3 {
+   margin-bottom:2px;
+   padding-left:5px;
+   font-size:14px;
+   color:#823C34;
+   line-height:1.2;
+   border-left:8px solid #823C34;
+}
+
+#main h4 {
+   margin-bottom:2px;
+   padding:2px;
+   font-size:13px;
+   color:#fff;
+   background:#823C34;
+}
+
+#main h5 {
+   margin-bottom:2px;
+   font-size:13px;
+   color:#823C34;
+   border-bottom:1px dotted #823C34;
+}
+
+#main h6 {
+   margin-bottom:2px;
+   font-size:13px;
+   color:#823C34;
+}
+
+#main p {
+   margin:0 0 1em 0;
+}
+
+#main dt {
+   margin-bottom:3px;
+}
+
+#main dd {
+   padding:0;
+   margin:0 0 0.5em 1em;
+   padding:3px;
+   background:#FFF3EF;
+}
+
+/* INFORMATION CUSTOMIZE */
+* html body #main dl.information dd div {
+   display:inline-block;
+}
+
+#main dl.information dt {
+   margin:0;
+   padding:0 0 0 10px;
+   background:url(../images/bg_list.gif) 0 6px no-repeat;
+}
+
+#main dl.information dd {
+   margin:0 0 1em 1em;
+   padding:3px;
+}
+
+#main table {
+/*   width:100%; */
+   border-collapse:collapse;
+}
+
+#main table th {
+   padding:5px;
+   font-size:12px;
+   color:#fff;
+   text-align:left;
+   border:1px solid #ddd;
+   background:#db7100;
+}
+
+#main table td {
+   padding:5px;
+   font-size:12px;
+   text-align:left;
+   border:1px solid #ddd;
+}
+
+/* ========SUBCONTENTS CUSTOMIZE======== */
+#sub .section {
+   margin-bottom:10px;
+}
+
+#sub h2 {
+   font-size:14px;
+   font-weight:bold;
+   color:#333;
+   line-height:1.2;
+}
+
+#sub ul {
+   margin:1px 0 0 20px;
+   padding:0;
+}
+
+#sub li {
+   padding:1px 0 1px 0;
+   list-style:none;
+   background:url(../images/bg_sub_line.gif) 0 100% repeat-x;
+}
+
+/*
+#sub li {
+   display:block;
+   width:200px;
+   padding-left:12px;
+   background:url(../images/bg_list.gif) 0 6px no-repeat;
+}
+*/
+
+/*
+#sub li a {
+   display:block;
+   width:200px;
+   padding-left:12px;
+   background:url(../images/bg_list.gif) 0 6px no-repeat;
+}
+*/
+
+#sub li a:hover {
+   border:none;
+   font-weight:bold;
+   display:block;
+   width:160px;
+   background:#FFF3EF 0 6px no-repeat;
+   text-decoration:none;
+}
+
+
+/* ========PAGETOP CUSTOMIZE======== */
+#pageTop {
+   padding:10px 0;
+   text-align:right;
+}
+
+#pageTop a {
+   padding:0 0 0 12px;
+   background:url(../images/bg_pagetop.gif) 0 60% no-repeat;
+}
+
+
+/* ========FOOTMENU CUSTOMIZE========= */
+#footMenu {
+   position:relative;
+   padding:20px 0 0 0;
+   border-top:1px solid #CECFCE;
+}
+
+#footMenu ul {
+   position:relative;
+   left:50%;
+   float:left;
+   margin:0;
+   padding:0;
+   list-style:none;
+}
+
+#footMenu li {
+   position:relative;
+   left:-50%;
+   float:left;
+   margin:0 20px 0 0;
+   padding:0;
+   font-size:12px;
+}
+
+
+/* ========FOOTER CUSTOMIZE======== */
+#footer {
+   text-align:center;
+   padding:20px 0;
+}
+
+.copyright {
+   font-size:11px;
+}

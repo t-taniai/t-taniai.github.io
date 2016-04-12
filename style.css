@@ -1,0 +1,160 @@
+/**************************************************************************
+Background colour, fonts, margins, all are done here
+**************************************************************************/
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: #FFFFFF;
+}
+
+/**************************************************************************
+All the goodness of links
+**************************************************************************/	
+a:link, a:visited, a:active {
+	color: #999;
+	text-decoration: none;
+}
+
+/**************************************************************************
+Need I comment?
+**************************************************************************/
+a:hover {
+	text-decoration: underline;
+	color: #FF9900;
+}
+
+
+/**************************************************************************
+This is the giant white box that holds everything together
+**************************************************************************/
+#thebox {
+	width: 50em;
+	background-color: white;
+	color: #666;
+	border: 1px #cccccc solid;
+	margin: 50px auto 0px auto;
+	padding: 0px 20px 0 20px
+}
+
+/**************************************************************************
+This was the best way I thought they orange square logo thingy could be 
+displayed. The logo coding looks really messy and rather horrible. I'm sure 
+there are better ways of doing this. Please drop me a line if you know how.
+**************************************************************************/
+#logo { 
+	text-align: center;
+	width: 113px;
+	margin: 0px 5px 30px -10px;
+	padding: 50px 10px 5px 10px;
+	background-color: #FF9900;
+	color: #FFFFFF;
+	font-family: Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+/**************************************************************************
+Navigation bar, lists, and links - Uses Gill Sans for the good ol' Mac. 
+I'm using different linking styles for the navigation bar. Also, <li> tags 
+are used.
+**************************************************************************/
+#nav {
+	width: 455px;
+	margin: -65px 0px 50px 100px;
+	padding: 0px 0px 0px 0px;
+	color: #999;
+	font-family: 'Gill Sans', Verdana, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+#nav li {
+	list-style: none;
+	display: inline;
+	margin-right: 20px;
+	font-family: Helvetica, sans-serif;
+}
+
+#nav a {
+	font-size: 10px;
+	font-weight: normal;
+	color: #999;
+	text-decoration: none;
+	font-family: Helvetica, sans-serif;
+}
+
+#nav a:hover {
+	font-size: 10px;
+	color: #FF9900;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+/**************************************************************************
+The content - full of goodness and textaulity, hehe.
+**************************************************************************/
+#content {
+	color: #666;
+	font-family: 'Gill Sans', Verdana, Helvetica, sans-serif;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 10px 10px 10px;
+}
+
+#content strong {
+	font-weight:bold;
+}
+
+/**************************************************************************
+Header #1 - This header displays the topic name of text
+**************************************************************************/
+#content h1 {
+	color: #87ceeb;
+	font-size: 14px;
+}
+
+#content a {
+	color: #FF9900;
+}
+
+#content h1 a:link, a:visited, a:active {
+	color: #FF9900;
+	font-family: 'Gill Sans', Verdana, Helvetica, sans-serif;
+	
+	font-weight: normal;
+}
+
+#content h1 a:hover {
+	text-decoration: underline;
+	font-family: 'Gill Sans', Verdana, Helvetica, sans-serif;
+	color: #FF9900;
+}
+
+/**************************************************************************
+Header #2 - This header displays the date
+**************************************************************************/
+
+#content h2 { 
+display:inline;
+font-size: 10px;
+letter-spacing: 3px;
+text-transform: uppercase;
+padding-left:10pt;
+}
+#content p { 
+padding-left:10pt;
+}
+
+#foot {
+
+text-align: center;
+color: #696969;
+}
+
+#cv {
+	text-align:center;
+	border-top:1px #999 solid;
+	border-bottom:1px #999 solid;
+	margin-bottom:30px;
+}

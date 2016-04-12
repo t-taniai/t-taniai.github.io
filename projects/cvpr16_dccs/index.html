@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0058)http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Joint Recovery of Dense Correspondence and Cosegmentation in Two Images | CVPR 2016</title></head>
+<body><div id="StayFocusd-infobar" style="display:none;">
+    <img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png">
+    <span id="StayFocusd-infobar-msg"></span>
+    <span id="StayFocusd-infobar-links">
+        <a href="http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/#" id="StayFocusd-infobar-never-show">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/#" id="StayFocusd-infobar-hide">hide once</a>
+    </span>
+</div>
+<table style="font-family: Times New Roman,Times,serif; text-align: left; margin-left: auto; margin-right: auto; width: 875px; height: 832px;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td colspan="3" rowspan="1">
+<div style="text-align: center;"></div>
+<h1 style="font-weight: normal; text-align: center;">Joint Recovery of Dense Correspondence and <br>Cosegmentation in Two Images</h1>
+<div style="text-align: center;"><big><a href="http://taniai.space" target="_blank">Tatsunori Taniai</a><small><small><small>1 </small></small></small>&nbsp;<a href="http://research.microsoft.com/en-us/people/sudipsin/" target="_blank">Sudipta Sinha</a><small><small><small>2</small></small></small> &nbsp;<a href="http://www.hci.iis.u-tokyo.ac.jp/~ysato/" target="_blank">Yoichi Sato</a><small><small><small>1</small></small></small><br>
+<small><small><small>1</small></small></small>The University of Tokyo, Japan
+<br>
+<small><small><small>2</small></small></small>Microsoft Research</big><big><br>
+<br>
+CVPR 2016<br>
+</big></div>
+</td>
+</tr>
+<tr><td colspan="3" rowspan="1" style="text-align: center;"><p><img src="./overview.jpg" alt="Method overview" width="600" height="226"></p></td>
+</tr>
+<tr>
+  <td width="20%"><p>&nbsp;</p>
+    <p>&nbsp;</p></td>
+  <td width="60%" align="left"><p><span style="font-weight: bold;">Abstract</span> -- We propose a new technique to jointly recover cosegmentation
+and dense per-pixel correspondence in two images.
+Our method parameterizes the correspondence field using
+piecewise similarity transformations and recovers a mapping
+between the estimated common “foreground” regions
+in the two images allowing them to be precisely aligned.
+Our formulation is based on a hierarchical Markov random
+field model with segmentation and transformation labels.
+The hierarchical structure uses nested image regions to constrain
+inference across multiple scales. Unlike prior hierarchical
+methods which assume that the structure is given,
+our proposed iterative technique dynamically recovers the
+structure along with the labeling. This joint inference is performed
+in an energy minimization framework using iterated
+graph cuts. We evaluate our method on a new dataset of 400
+image pairs with manually obtained ground truth, where it
+outperforms state-of-the-art methods designed specifically
+for either cosegmentation or correspondence estimation.</p></td>
+  <td width="20%">&nbsp;</td>
+</tr>
+<tr>
+  <td colspan="3" align="center"><strong>We will release our new dataset and evaluation kit soon.</strong><br><br></td>
+</tr>
+<tr>
+  <td colspan="3" align="center"><a href="./cvpr2016-dccs-final.pdf"><img src="./paper_thumbnail.jpg" alt="Paper PDF" width="88" height="114"></a></td>
+  </tr>
+<!--tr>
+  <td colspan="3" align="center"><a href="./cvpr2015-seg-poster.pdf"><img src="./poster_thumbnail.jpg" alt="Poster PDF" width="400" height="196"></a></td>
+  </tr-->
+<tr><td colspan="3" align="center"><br />
+<h2>Supplementary Video</h2><p>
+<div id="mediaplayer">Please enable javascript</div>
+<script type="text/javascript" src="../../js/mediaplayer/jwplayer.js"></script>
+<script type="text/javascript">
+	jwplayer("mediaplayer").setup({
+		flashplayer: "../../js/mediaplayer/player.swf",
+		file: "cvpr16-cosegmatching-supp-ver-final.mp4",
+		width: 800,
+		height: 450
+	});
+</script></p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p><br style="font-family: Times New Roman,Times,serif;">
+  </p>
+</blockquote>
+</body></html>

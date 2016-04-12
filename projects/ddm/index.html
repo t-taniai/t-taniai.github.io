@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0058)http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Image Segmentation using Dual Distribution Matching</title></head>
+<body><div id="StayFocusd-infobar" style="display:none;">
+    <img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png">
+    <span id="StayFocusd-infobar-msg"></span>
+    <span id="StayFocusd-infobar-links">
+        <a href="http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/#" id="StayFocusd-infobar-never-show">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/#" id="StayFocusd-infobar-hide">hide once</a>
+    </span>
+</div>
+<table style="font-family: Times New Roman,Times,serif; text-align: left; margin-left: auto; margin-right: auto; width: 875px; height: 832px;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td colspan="3" rowspan="1">
+<div style="text-align: center;"></div>
+<h1 style="font-weight: normal; text-align: center;">Image Segmentation using Dual Distribution Matching</h1>
+<div style="text-align: center;">
+  <p><big><a href="http://taniai.space" target="_blank">Tatsunori Taniai</a><small><small><small>1 </small></small></small>&nbsp;<a href="http://nae-lab.org/~viet/" target="_blank">Viet-Quoc Pham</a><small><small><small>2</small></small></small>  <a href="http://www.fujii.nuee.nagoya-u.ac.jp/~takahasi/" target="_blank">Keita Takahashi</a>3&nbsp;<a href="http://nae-lab.org/~naemura/" target="_blank">Takeshi Naemura</a><small><small><small>1</small></small></small><br>
+  <small><small><small>1</small></small></small>The University of Tokyo, Japan
+  <br>
+  </big><big>2Toshiba Corporate R&amp;D Center, Japan<br>
+    <small><small><small>3</small></small></small>The University of Electro-Communications, Japan</big><big><br>
+      <br>
+      BMVC 2012 Oral Paper<br>
+    </big></p>
+</div>
+</td>
+</tr>
+<tr><td colspan="3" rowspan="1" style="text-align: center;"><p><img src="concept.jpg" width="800" height="283"></p></td>
+</tr>
+<tr>
+  <td width="20%"><p>&nbsp;</p>
+    <p>&nbsp;</p></td>
+  <td width="60%" align="left"><p><span style="font-weight: bold;">Abstract</span><br>
+    We propose an image segmentation method that divides an image into foreground and
+background regions when the approximate color distributions for these regions are given.
+Our approach was inspired by global consistency measures that directly evaluate the similarity
+between a given distribution and the distribution of the resulting segmentation,
+which were recently proposed in order to overcome the limitations of traditional pixelwise
+(local) consistency measures. The main feature of our proposal is that it uses two
+(foreground and background) input distributions, which increases the robustness compared
+to previous studies. To achieve this, we formulated a new mathematical model that
+describes the consistencies between the two input distributions and the segmentation, in
+which weighting parameters for the two distribution matching terms are set to be approximately
+proportional to the size of the foreground and background areas. We call this dual
+distribution matching (DDM). We also derived an optimization method that uses graph
+cuts. Experimental results that show the effectiveness of our method and comparisons
+between local and global consistency measures are presented. </p></td>
+  <td width="20%">&nbsp;</td>
+</tr>
+<tr>
+  <td colspan="3" align="center"><br></td>
+</tr>
+<tr>
+  <td colspan="3" align="center"><a href="bmvc12.pdf"><img src="paper_thumbnail.jpg" width="500" height="254"></a></td>
+  </tr>
+<tr>
+  <td colspan="3" align="center"> [<a href="bmvc12.pdf">PDF</a>] [<a href="bmvc12_appendix.pdf">Supp</a>] [<a href="bmvc12_abstract.pdf">ExAbstract</a>] [<a href="https://docs.com/tatsunori-taniai/7577/image-segmentation-using-dual-distribution" target="_blank">Slides</a>] [<a href="http://videolectures.net/bmvc2012_taniai_distribution_matching/" target="_blank">VideoLecuture</a>]</td>
+</tr>
+<tr><td colspan="3" align="center"><br />
+<h2>Video Segmentation Results</h2>
+<div id="mediaplayer">Please enable javascript</div>
+<script type="text/javascript" src="../../js/mediaplayer/jwplayer.js"></script>
+<script type="text/javascript">
+	jwplayer("mediaplayer").setup({
+		flashplayer: "../../js/mediaplayer/player.swf",
+		file: "bmvc12_result.mp4",
+		width: 352,
+		height: 288,
+		image: "bmvc12_result.png"
+	});
+</script></p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p><br style="font-family: Times New Roman,Times,serif;">
+  </p>
+</blockquote>
+</body></html>

@@ -1,0 +1,7 @@
+3ページ目: 図2.1のグラフに含まれる平滑化項は hpq(B, F) と hpq(F, B) のみで hpq(B, B) と hpq(F, F) は含まれていないことである．これらを無視してもグラフの最小カットが式 (2.2) のエネルギー関数 E(L) の最小解と同じであることを保証するには...
+
+の記述は不正確である。正しくは、エネルギーが劣モジュラであるときは hpq(B, B) と hpq(F, F) が零、hpq(B, F) と hpq(F, B) が非負となるようにエネルギー関数を等価的に変換できる、となる。詳しくは以下の文献を参照されたい。
+
+What Energy Functions Can Be Minimized via Graph Cuts?
+Vladimir Kolmogorov and Ramin Zabih
+IEEE Transactions on Pattern Analysis and Machine Intelligence, volume 26, issue 2, pages 147--159, 2004.

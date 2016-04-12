@@ -1,0 +1,31 @@
+Name	Year	Date	Days	Due	#Papers	#Orals	#Submitted	Total AR	Oral AR	Place	Note
+ICCV	2011	Nov 6, 2011	4+4	Mar 1, 2011	339	45	1433	23.7%	3.1%	Barcelona, ESP	Vaild submissions: 1394
+ICCV	2013	Dec 1, 2013	4+4	Apr 12, 2013	454	41	1629	27.9%	2.5%	Sydney, AUS	Withdrawals and invalids: 128
+ICCV	2015	Dec 11, 2015	4+4	Apr 22, 2015	525	56	1698	30.3%	3.3%	Santiago, CHL	
+CVPR	2010	Jun 13, 2010	3+3	Nov 19, 2009	461	78	1724	26.7%	4.5%	San Francisco, USA	
+CVPR	2011	Jun 20, 2011	3+3	Nov 11, 2010	438	59	1677	26.1%	3.5%	Colorado Springs, USA	
+CVPR	2012	Jun 16, 2012	3+3	Nov 21, 2011	466	48	1933	24.1%	2.5%	Providence, USA	
+CVPR	2013	Jun 23, 2013	3+3	Nov 15, 2012	472	60	1798	26.2%	3.3%	Portland, USA	Withdrawals and invalids: 18
+CVPR	2014	Jun 23, 2014	4+2	Nov 1, 2013	540	104	1807	29.9%	5.8%	Columbus, USA	Fully reviewed: 1778
+CVPR	2015	Jun 7, 2015	3+3	Nov 14, 2014	602	71	2123	28.4%	3.3%	Boston, USA	Fully reviewed: 1815
+ECCV	2010	Sep 5, 2010	4+3	May 17, 2010	325	40	1174	27.7%	3.4%	Crete, GRC	
+ECCV	2012	Oct 7, 2012	4+3	May 5, 2012	408	40	1437	28.4%	2.8%	Firenze, ITA	
+ECCV	2014	Sep 6, 2014	4+3	May 7, 2014	363	38	1359	26.7%	2.8%	Zurich, DEU	
+ACCV	2010	Nov 8, 2010	3+2	Jun 1, 2010	215	35	739	29.1%	4.7%	Queenstown, NZL	
+ACCV	2012	Nov 5, 2012	3+2	Jul 1, 2012	231	31	869	26.6%	3.6%	Daejeon, KOR	
+ACCV	2014	Nov 1, 2014	3+2	Jun 20, 2014	227	32	814	27.9%	3.9%	Singapore	
+BMVC	2010	Aug 31, 2010	3+1	May 7, 2010	116	30	341	34.0%	8.8%	Aberystwyth, GBR	Original due: Apr 30
+BMVC	2011	Aug 29, 2011	3+2	Apr 22, 2011	132	35	419	31.5%	8.4%	Dundee, GBR	Original due: Apr 15
+BMVC	2012	Sep 3, 2012	3+2	May 9, 2012	132	32	414	31.9%	7.7%	Surrey, GBR	Original due: May 3
+BMVC	2013	Sep 9, 2013	3+2	May 1, 2013	131	29	439	29.8%	6.6%	Bristol, GBR	Original due: Apr 24
+BMVC	2014	Sep 1, 2014	3+2	May 9, 2014	131	33	431	30.4%	7.7%	Nottingham, GBR	Original due: May 2
+BMVC	2015	Sep 7, 2015	3+1	May 11, 2015	186	41	553	33.6%	7.4%	Swansea, GBR	Original due: May 4
+ICPR	2010	Aug 23, 2010	4	Jan 25, 2010	1162	385	2140	54.3%	18.0%	Istanbul, TUR	Original due: Jan 15
+ICPR	2012	Nov 11, 2012	4+2	Apr 7, 2012	942	313	1941	48.5%	16.1%	Tsukuba, JPN	Original due: Mar 31
+ICPR	2014	Aug 24, 2014	4+1	Dec 20, 2013	792	198	1409	56.2%	14.1%	Stockholm, SWE	
+ACPR	2011	Nov 28, 2011	3	Jul 10, 2011	146	64	272	53.7%	23.5%	Beijing, CHN	Original due: Jun 15, then Jul 5
+ACPR	2013	Nov 5, 2013	3+1	Jun 20, 2013	139	28	291	47.8%	9.6%	Okinawa, JPN	Original due: Jun 10
+ACPR	2015	Nov 3, 2015	3+1	Jul 17, 2015	170	36	422	40.3%	8.5%	Kuala Lumpur, MYS	Original due: Jun 1
+EMMCVPR	2011	Jul 25, 2011	3	Mar 28, 2011	30	16	52	57.7%	30.8%	St. Petersburg, RUS	Original due: Mar 25
+EMMCVPR	2013	Aug 19, 2013	3	May 17, 2013	26	26	40	65.0%	65.0%	Lund, SWE	Original due: May 10
+EMMCVPR	2015	Jan 13, 2015	4	Jul 30, 2014	36	36	45	80.0%	80.0%	Hong Kong, CHN	Original due: Jul 15

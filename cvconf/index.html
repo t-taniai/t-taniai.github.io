@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>A List of Computer Vision and Image Processing Conferences</title>
+    <link rel="stylesheet" href="themes/blue/theme.blue.css" type="text/css" id="" media="print, projection, screen" />
+
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.csvToTable.js"></script>
+    <script type="text/javascript" src="js/jquery.tablesorter.js"></script>
+    <script type="text/javascript" src="js/jquery.tablesorter.widgets.js"></script>
+
+    <script>
+        $(function () {
+            $('#CSVTable').CSVToTable('database.tsv', { loadingImage: 'images/loading.gif', startLine: 0, separator: "\t", tableClass: "tablesorter-blue", tableStyle: "width:100%; text-align:center", tableId: "mainTable" }).bind("loadComplete", function () {
+                $('#mainTable').tablesorter({
+                    theme: 'blue',
+                    widthFixed: true,
+                    widgets: ["zebra", "resizable"],
+                    widgetOptions: {
+                        resizable_addLastColumn: true
+                    }
+                });
+
+            });
+
+            $.get('database.tsv', { msg: 'test' }, function (data, status, xhr) {
+                $('#lastupdate').html('<strong>Last updated</strong>: ' + xhr.getResponseHeader("Last-Modified"));
+            });
+        });
+    </script>
+    <style id="css">
+        th.tablesorter-header.resizable-false {
+            background-color: #9fbfdf;
+        }
+        .tablesorter-blue .headerSortUp,
+        .tablesorter-blue .tablesorter-headerSortUp,
+        .tablesorter-blue .tablesorter-headerAsc,
+        .tablesorter-blue .headerSortDown,
+        .tablesorter-blue .tablesorter-headerSortDown,
+        .tablesorter-blue .tablesorter-headerDesc {
+            background-color: #e6bf99;
+        }
+
+            /* ensure box-sizing is set to content-box, if using jQuery versions older than 1.8;
+        this page is using jQuery 1.4 */
+            *, *:before, *:after; {
+            -moz-box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+        }
+
+        body {
+            background-color: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            font-family: Arial,Helvetica,sans-serif;
+        }
+
+        table {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main" style="width: 90%; margin: 30px auto 30px auto;">
+        <h1 style="font-size: x-large; text-align: center">A List of Computer Vision and Image Processing Conferences</h1>
+        <div style="margin-left: auto; margin-right: auto; margin-top: 30px; margin-bottom: 30px; color: #3D3D3D; text-align: center; width: 600px; text-align:left">This list was created by <a href="../" style="text-decoration:none">Tatsunori Taniai</a> for his personal interest. The sources of the information include official announcements, personal reports, and other unofficial records on the web. </div>
+        
+        <div style="margin-left: auto; margin-right: auto; margin-top: 0; margin-bottom: 0; color: #3D3D3D; text-align: left; width: 100%; text-align:right; font-size:12px">
+            <span id="lastupdate"></span><br />
+            <strong>Sorting</strong>: Multi-column sorting function is available by clicking header columns with the shift key
+            </div>
+        <div id="CSVTable"></div>
+        <div style="margin-left: auto; margin-right: auto; margin-top: 30px; margin-bottom: 30px; color: #3D3D3D; text-align: left; width: 100%; text-align:left; font-size:12px">
+            <p><strong>Name</strong>: the conference name<br />
+                <strong>Year</strong>: the year of the conference<br />
+                <strong>Date</strong>: the begining date of the conference (or workshops/tutorials prior to the main conference)<br />
+                <strong>Days</strong>: the days of the main conference and workshops/tutorials<br />
+                <strong>Deadline</strong>: the final deadline date (after extension if it was extended)<br />
+                <strong>#Papers</strong>: the number of accepted papers<br />
+                <strong>#Orals</strong>: the numer of oral papers<br />
+                <strong>#Submitted</strong>: the number of total submissions (may or may not contain invalid submissions depending on official announcements)<br />
+                <strong>Total AR</strong>: the overall acceptance rate (#Papers / #Submitted)<br />
+                <strong>Oral AR</strong>: the oral acceptance rate  (#Orals / #Submitted)<br />
+                <strong>Place</strong>: the conference place<br />
+                <strong>Note</strong>: additional information e.g. original deadline<br />
+            </p>
+            <p>
+                <strong>ICCV</strong>: International Confefence on Computer Vision. Held in odd years. Can submit after CVPR notifications. 6-8 pages in double column excluding references (ICCV 2015).<br />
+                <strong>CVPR</strong>: IEEE Confefence on Computer Vision and Pattern Recognition. 6-8 pages in double column excluding references (CVPR 2015).<br />
+                <strong>ECCV</strong>: European Confefence on Computer Vision. Held in even years. Can submit after CVPR notifications. 14 pages in single column excluding references (ECCV 2014).<br />
+                <strong>ACCV</strong>: Asian Confefence on Computer Vision. Held in even years. Can submit after ECCV notifications. 14 pages in single column excluding references (ACCV 2014).<br />
+                <strong>BMVC</strong>: British Machine Vision Conference. 9 pages in single column excluding references (BMVC 2015).<br />
+                <strong>ICPR</strong>: International Confefence on Pattern Recognition. Held in even years. 6 pages in double column including references (ICPR 2014).<br />
+                <strong>ACPR</strong>: Asian Confefence on Pattern Recognition.  Held in odd years. 5 pages in double column including references (ACPR 2013).<br />
+            <strong>EMMCVPR</strong>: International Conference on Energy Minimization Methods in Computer Vision and Pattern Recognition. Held in odd years. 14 pages in single column including references (EMMCVPR 2015).</p>
+            <p><strong>Links</strong>: [<a href="http://www.bmva.org/bmvc:stats" target="new">BMVC Statistics</a>] [<a href="http://www.adaptivebox.net/CILib/CICON_stat.html" target="new">CICON</a>] [<a href="http://diml.yonsei.ac.kr/~sryu/useful.html" target="new">S. Ryu's page</a>]<br />
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>

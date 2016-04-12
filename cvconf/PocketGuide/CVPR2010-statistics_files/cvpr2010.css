@@ -1,0 +1,182 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 11:03:06 7 14, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:42:04 12 18, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+.chair {
+  color: #000000;
+  font: 14px serif;
+  text-decoration: none;
+}
+
+.chair:link {
+}
+.chair:visited {
+}
+.chair:hover {
+  text-decoration: underline;
+}
+
+.announce {
+  color: #000000;
+  font: 16px serif;
+  text-decoration: none;
+}
+.announce:visited {
+  text-decoration: underline;
+}
+.announce:link {
+  text-decoration: underline;
+}
+.announce:hover {
+  text-decoration: none;
+}
+
+.mainheader {
+  color: #000000;
+  font: 20px serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+.mainheader:link {
+  text-decoration: underline;
+}
+.mainheader:visited {
+  text-decoration: underline;
+}
+.mainheader:hover {
+  text-decoration: none;
+}
+
+.cvprpageheader {
+  color: #3d3648;
+  font: 26px sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+.cvprpageheader:link {
+  color: #3d3688;
+  text-decoration: underline;
+}
+.cvprpageheader:visited {
+  color: #3d3688;
+  text-decoration: underline;
+}
+.cvprpageheader:hover {
+  color: #3d3688;
+  text-decoration: none;
+}
+.cvprpagesub {
+  color: #3d3648;
+  font: 18px sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+.cvprpagesub:link {
+  color: #3d3688;
+  text-decoration: underline;
+}
+.cvprpagesub:visited {
+  color: #3d3688;
+  text-decoration: underline;
+}
+.cvprpagesub:hover {
+  color: #3d3688;
+  text-decoration: none;
+}
+.cvprbody {
+  color: #3d3648;
+  font: 14px sans-serif;
+  text-decoration: none;
+}
+.cvprbody:link {
+  color: #3d3688;
+  text-decoration: underline;
+}
+.cvprbody:visited {
+  color: #3d3688;
+  text-decoration: underline;
+}
+.cvprbody:hover {
+  color: #3d3688;
+  text-decoration: none;
+}
+.cvprbodysm {
+  color: #3d3648;
+  font: 11px sans-serif;
+  text-decoration: none;
+}
+.cvprbodysm:link {
+  color: #3d3688;
+  text-decoration: underline;
+}
+.cvprbodysm:visited {
+  color: #3d3688;
+  text-decoration: underline;
+}
+.cvprbodysm:hover {
+  color: #3d3688;
+  text-decoration: none;
+}
+.cvprsession {
+  color: #3d3648;
+  font: 14px sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+.cvprsession:link {
+  color: #3d3688;
+  text-decoration: underline;
+}
+.cvprsession:visited {
+  color: #3d3688;
+  text-decoration: underline;
+}
+.cvprsession:hover {
+  color: #3d3688;
+  text-decoration: none;
+}
+.cvprpaper {
+  color: #3d3648;
+  font: 11px sans-serif;
+  text-decoration: none;
+  max-width: 300px;
+}
+.cvprpaper:link {
+  color: #3d3688;
+  text-decoration: underline;
+}
+.cvprpaper:visited {
+  color: #3d3688;
+  text-decoration: underline;
+}
+.cvprpaper:hover {
+  color: #3d3688;
+  text-decoration: none;
+}
+.cvprpapersm {
+  color: #3d3648;
+  font: 12px sans-serif;
+  text-decoration: none;
+  max-width: 250px;
+}
+.cvprpapersm:link {
+  color: #3d3688;
+  text-decoration: underline;
+}
+.cvprpapersm:visited {
+  color: #3d3688;
+  text-decoration: underline;
+}
+.cvprpapersm:hover {
+  color: #3d3688;
+  text-decoration: none;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0058)http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Superdifferential Cuts for Binary Energies | CVPR 2015</title></head>
+<body><div id="StayFocusd-infobar" style="display:none;">
+    <img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png">
+    <span id="StayFocusd-infobar-msg"></span>
+    <span id="StayFocusd-infobar-links">
+        <a href="http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/#" id="StayFocusd-infobar-never-show">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/#" id="StayFocusd-infobar-hide">hide once</a>
+    </span>
+</div>
+<table style="font-family: Times New Roman,Times,serif; text-align: left; margin-left: auto; margin-right: auto; width: 875px; height: 832px;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td colspan="3" rowspan="1">
+<div style="text-align: center;"></div>
+<h1 style="font-weight: normal; text-align: center;">Superdifferential Cuts for Binary Energies</h1>
+<div style="text-align: center;"><big><a href="http://taniai.space" target="_blank">Tatsunori Taniai</a><small><small><small>1 </small></small></small>&nbsp;<a href="http://www-infobiz.ist.osaka-u.ac.jp/user/matsushita/" target="_blank">Yasuyuki
+Matsushita</a><small><small><small>2</small></small></small> &nbsp;<a href="http://nae-lab.org/~naemura/" target="_blank">Takeshi Naemura</a><small><small><small>1</small></small></small><br>
+<small><small><small>1</small></small></small>The University of Tokyo, Japan
+<br>
+<small><small><small>2</small></small></small>Osaka University, Japan</big><big><br>
+<br>
+CVPR 2015<br>
+</big></div>
+</td>
+</tr>
+<tr><td colspan="3" rowspan="1" style="text-align: center;"><p><img src="./overview.jpg" alt="Method overview" width="751" height="260"></p></td>
+</tr>
+<tr>
+  <td width="20%"><p>&nbsp;</p>
+    <p>&nbsp;</p></td>
+  <td width="60%" align="left"><p><span style="font-weight: bold;">Abstract</span><br>
+  We propose an efficient and general purpose energy
+optimization method for binary variable energies used
+in various low-level vision tasks. Our method can be
+used for broad classes of higher-order and pairwise nonsubmodular
+functions. We first revisit a submodularsupermodular
+procedure (SSP) [Narasimhan05], which is previously
+studied for higher-order energy optimization. We then
+present our method as generalization of SSP, which is
+further shown to generalize several state-of-the-art techniques
+for higher-order and pairwise non-submodular functions
+[Ayed13, Gorelick14, Tang14]. In the experiments, we apply our method to
+image segmentation, deconvolution, and binarization, and
+show improvements over state-of-the-art methods.</p></td>
+  <td width="20%">&nbsp;</td>
+</tr>
+<tr>
+  <td colspan="3" align="center"><strong>Code is now availabe at <a href="https://github.com/t-taniai/SDC_CVPR2015" target="_blank">GitHub</a>.</strong><br>
+See also <a href="http://www.csd.uwo.ca/~mtang73/" target="_blank">Meng et al.</a> "Pseudo-Bound Optimization for Binary Energies" (ECCV 2014) for data and code.<br>
+    <br></td>
+</tr>
+<tr>
+  <td colspan="3" align="center"><a href="./cvpr2015-seg-final.pdf"><img src="./paper_thumbnail.jpg" alt="Paper PDF" width="800" height="114"></a></td>
+  </tr>
+<tr>
+  <td colspan="3" align="center"><a href="./cvpr2015-seg-poster.pdf"><img src="./poster_thumbnail.jpg" alt="Poster PDF" width="400" height="196"></a></td>
+  </tr>
+<tr><td colspan="3" align="center"><br />
+<h2>Supplementary Video</h2><p>
+<div id="mediaplayer">Please enable javascript</div>
+<script type="text/javascript" src="../../js/mediaplayer/jwplayer.js"></script>
+<script type="text/javascript">
+	jwplayer("mediaplayer").setup({
+		flashplayer: "../../js/mediaplayer/player.swf",
+		file: "1189-supp-video-HQ.mp4",
+		width: 800,
+		height: 450
+	});
+</script></p></td>
+</tr><tr>
+  <td colspan="3" align="center"><p>&nbsp;</p>
+    <h2> Generalization to prior methods</h2>
+    <p><img src="bound.jpg" alt="Proposed bound" width="800" height="197"><br /><br /></p>
+    <h2>Segmentation results via color histogram matching (Higher-order  energies)</h2>
+    <p><img src="seg-results.jpg" alt="Segmentation results" width="800" height="205"><br /><br /></p>
+    <h2>Deconvolution results (Nonsubmodular pairwise  energies)</h2>
+    <p><img src="deconv-results.jpg" alt="Deconvolution results" width="800" height="208"><br /><br /></p>
+    <h2>Curvature-regularization results (Nonsubmodular pairwise  energies)</h2>
+    <p><img src="curvature-results.jpg" alt="Curvature-regularization results" width="800" height="280"></p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+  <p><br style="font-family: Times New Roman,Times,serif;">
+  </p>
+</blockquote>
+</body></html>
