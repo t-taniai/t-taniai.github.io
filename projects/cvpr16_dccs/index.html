@@ -1,71 +1,56 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<p>&nbsp;</p>
 <!-- saved from url=(0058)http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Joint Recovery of Dense Correspondence and Cosegmentation in Two Images | CVPR 2016</title></head>
-<body><div id="StayFocusd-infobar" style="display:none;">
-    <img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png">
-    <span id="StayFocusd-infobar-msg"></span>
-    <span id="StayFocusd-infobar-links">
-        <a href="http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/#" id="StayFocusd-infobar-never-show">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/#" id="StayFocusd-infobar-hide">hide once</a>
-    </span>
-</div>
-<table style="font-family: Times New Roman,Times,serif; text-align: left; margin-left: auto; margin-right: auto; width: 875px; height: 832px;" border="0" cellpadding="0" cellspacing="0">
+<p>Joint Recovery of Dense Correspondence and Cosegmentation in Two Images | CVPR 2016</p>
+<div id="StayFocusd-infobar" style="display: none;"><img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png" alt="" /> <span id="StayFocusd-infobar-msg"></span> <span id="StayFocusd-infobar-links"> <a id="StayFocusd-infobar-never-show" href="http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/#">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a id="StayFocusd-infobar-hide" href="http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/#">hide once</a> </span></div>
+<table style="font-family: Times New Roman,Times,serif; text-align: left; margin-left: auto; margin-right: auto; width: 875px; height: 832px;" border="0" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
 <td colspan="3" rowspan="1">
-<div style="text-align: center;"></div>
-<h1 style="font-weight: normal; text-align: center;">Joint Recovery of Dense Correspondence and <br>Cosegmentation in Two Images</h1>
-<div style="text-align: center;"><big><a href="http://taniai.space" target="_blank">Tatsunori Taniai</a><small><small><small>1 </small></small></small>&nbsp;<a href="http://research.microsoft.com/en-us/people/sudipsin/" target="_blank">Sudipta Sinha</a><small><small><small>2</small></small></small> &nbsp;<a href="http://www.hci.iis.u-tokyo.ac.jp/~ysato/" target="_blank">Yoichi Sato</a><small><small><small>1</small></small></small><br>
-<small><small><small>1</small></small></small>The University of Tokyo, Japan
-<br>
-<small><small><small>2</small></small></small>Microsoft Research</big><big><br>
-<br>
-CVPR 2016<br>
-</big></div>
+<div style="text-align: center;">&nbsp;</div>
+<h1 style="font-weight: normal; text-align: center;">Joint Recovery of Dense Correspondence and <br />Cosegmentation in Two Images</h1>
+<div style="text-align: center;"><big><a href="http://taniai.space" target="_blank">Tatsunori Taniai</a><small><small><small>1 </small></small></small>&nbsp;<a href="http://research.microsoft.com/en-us/people/sudipsin/" target="_blank">Sudipta Sinha</a><small><small><small>2</small></small></small> &nbsp;<a href="http://www.hci.iis.u-tokyo.ac.jp/~ysato/" target="_blank">Yoichi Sato</a><small><small><small>1</small></small></small><br /> <small><small><small>1</small></small></small>The University of Tokyo, Japan <br /> <small><small><small>2</small></small></small>Microsoft Research</big><big><br /> <br /> CVPR 2016<br /> </big></div>
 </td>
 </tr>
-<tr><td colspan="3" rowspan="1" style="text-align: center;"><p><img src="./overview.jpg" alt="Method overview" width="600" height="226"></p></td>
+<tr>
+<td style="text-align: center;" colspan="3" rowspan="1">
+<p><img src="./overview.jpg" alt="Method overview" width="600" height="226" /></p>
+</td>
 </tr>
 <tr>
-  <td width="20%"><p>&nbsp;</p>
-    <p>&nbsp;</p></td>
-  <td width="60%" align="left"><p><span style="font-weight: bold;">Abstract</span> -- We propose a new technique to jointly recover cosegmentation
-and dense per-pixel correspondence in two images.
-Our method parameterizes the correspondence field using
-piecewise similarity transformations and recovers a mapping
-between the estimated common “foreground” regions
-in the two images allowing them to be precisely aligned.
-Our formulation is based on a hierarchical Markov random
-field model with segmentation and transformation labels.
-The hierarchical structure uses nested image regions to constrain
-inference across multiple scales. Unlike prior hierarchical
-methods which assume that the structure is given,
-our proposed iterative technique dynamically recovers the
-structure along with the labeling. This joint inference is performed
-in an energy minimization framework using iterated
-graph cuts. We evaluate our method on a new dataset of 400
-image pairs with manually obtained ground truth, where it
-outperforms state-of-the-art methods designed specifically
-for either cosegmentation or correspondence estimation.</p></td>
-  <td width="20%">&nbsp;</td>
+<td width="20%">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td align="left" width="60%">
+<p><span style="font-weight: bold;">Abstract</span> -- We propose a new technique to jointly recover cosegmentation and dense per-pixel correspondence in two images. Our method parameterizes the correspondence field using piecewise similarity transformations and recovers a mapping between the estimated common &ldquo;foreground&rdquo; regions in the two images allowing them to be precisely aligned. Our formulation is based on a hierarchical Markov random field model with segmentation and transformation labels. The hierarchical structure uses nested image regions to constrain inference across multiple scales. Unlike prior hierarchical methods which assume that the structure is given, our proposed iterative technique dynamically recovers the structure along with the labeling. This joint inference is performed in an energy minimization framework using iterated graph cuts. We evaluate our method on a new dataset of 400 image pairs with manually obtained ground truth, where it outperforms state-of-the-art methods designed specifically for either cosegmentation or correspondence estimation.</p>
+</td>
+<td width="20%">&nbsp;</td>
 </tr>
 <tr>
-  <td colspan="3" align="center"><strong>We released our new dataset and evaluation kit!!</strong><br><br></td>
+<td colspan="3" align="center"><strong>We released our new dataset and evaluation kit!!</strong><br /><br /></td>
 </tr>
 <tr>
-  <td colspan="3" align="center"><a href="./cvpr2016-dccs-final.pdf"><img src="./paper_thumbnail.jpg" alt="Paper PDF" width="88" height="114"></a></td>
-  </tr>
-<!--tr>
-  <td colspan="3" align="center"><a href="./cvpr2015-seg-poster.pdf"><img src="./poster_thumbnail.jpg" alt="Poster PDF" width="400" height="196"></a></td>
-  </tr-->
-  
+<td colspan="3" align="center"><a href="./cvpr2016-dccs-final.pdf"><img src="./paper_thumbnail.jpg" alt="Paper PDF" width="88" height="114" /></a></td>
+</tr>
 <tr>
-  <td colspan="3" align="center"><a href="http://research.microsoft.com/~sudipsin/datasets/TSS_CVPR2016.zip">[Dataset in a zip file]</a>  <a href="https://github.com/t-taniai/TSS_CVPR2016_EvaluationKit" target="_blank">[Evaluation and Visualization tools]</a></td>
-  </tr>
-<tr><td colspan="3" align="center"><br />
-<h2>Supplementary Video</h2><p>
-<!--div id="mediaplayer">Please enable javascript</div>
+<td colspan="3" align="center"><a href="./cvpr16-poster-final.pdf"><img src="./poster_thumbnail.jpg" alt="Poster PDF" width="200" height="98" /></a></td>
+</tr>
+<tr>
+<td colspan="1" align="center">&nbsp;</td>
+<td colspan="1" align="center">
+<ul>
+<li style="text-align: left;">Dataset (1.2GB)&nbsp;<a href="http://research.microsoft.com/~sudipsin/datasets/TSS_CVPR2016.zip">[zip]</a></li>
+<li style="text-align: left;">Evaluation and Visualization tools (MATLAB/C++/WinBin)&nbsp;<a href="https://github.com/t-taniai/TSS_CVPR2016_EvaluationKit" target="_blank">[GitHub]</a></li>
+<li style="text-align: left;">Benchmark results of all methods (2.1GB / uncomp 7.8GB)&nbsp;<a href="http://research.microsoft.com/~sudipsin/datasets/TSS_CVPR2016_AllBenchmarkResults.rar">[rar]</a></li>
+<li style="text-align: left;">Excel score sheets and flow accuracy plots of all methods&nbsp;<a href="./TSS_CVPR2016_ScoreSheets.zip">[zip]</a></li>
+</ul>
+</td>
+<td colspan="1" align="center">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="3" align="center"><br />
+<h2>Supplementary Video</h2>
+<p><!--div id="mediaplayer">Please enable javascript</div>
 <script type="text/javascript" src="../../js/mediaplayer/jwplayer.js"></script>
 <script type="text/javascript">
 	jwplayer("mediaplayer").setup({
@@ -74,14 +59,32 @@ for either cosegmentation or correspondence estimation.</p></td>
 		width: 800,
 		height: 450
 	});
-</script-->
-<iframe width="853" height="480" src="https://www.youtube.com/embed/Jt23XOp1Fow" frameborder="0" allowfullscreen></iframe>
-</p></td>
+</script--> <iframe src="https://www.youtube.com/embed/Jt23XOp1Fow" width="853" height="480" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" align="center">
+<h2>Score Correction of Benchmark</h2>
+</td>
+</tr>
+<tr>
+<td colspan="1" align="center">&nbsp;</td>
+<td style="text-align: left;" colspan="1" align="center">We identified a bug in our initial evaluation code and segmentation scores in Table 1 were incorrect. Although the score changes are small and they do not change the relative performances of the methods, we recommend to use the corrected scores shown in the following table (<a href="./correct_table1.pdf">PDF</a>), if you want to use our dataset and evaluation results in your work. This issue has been fixed in the latest evaluation tool and score sheets in the above link.</td>
+<td colspan="1" align="center">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="3" align="center">
+<p>&nbsp;</p>
+<img src="./correct_table1.png" alt="Correct Table1" width="816" height="847" /></td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-  <p><br style="font-family: Times New Roman,Times,serif;">
-  </p>
+<p>&nbsp;</p>
 </blockquote>
-</body></html>
