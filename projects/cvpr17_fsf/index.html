@@ -1,0 +1,68 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0058)http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Fast Multi-frame Stereo Scene Flow with Motion Segmentation | CVPR 2017</title></head>
+<body>
+<div id="StayFocusd-infobar" style="display: none;"><img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png" alt="" /> <span id="StayFocusd-infobar-msg"></span> <span id="StayFocusd-infobar-links"> <a id="StayFocusd-infobar-never-show" href="http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/#">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a id="StayFocusd-infobar-hide" href="http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/#">hide once</a> </span></div>
+<table style="font-family: Times New Roman,Times,serif; text-align: left; margin-left: auto; margin-right: auto; width: 875px; height: 832px;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td colspan="3" rowspan="1">
+<div style="text-align: center;">&nbsp;</div>
+<h1 style="font-weight: normal; text-align: center;">Fast Multi-frame Stereo Scene Flow<br />with Motion Segmentation</h1>
+<div style="text-align:center">
+<table style="text-align:center;table-layout:auto;width:100%;font-size:large;" rules="none"><tbody><tr><td style="width:12.5%"><br></td><td style="width:25%"><a href="http://taniai.space/" target="_blank">Tatsunori Taniai</a><br></td><td style="width:25%"><a href="http://research.microsoft.com/en-us/people/sudipsin/" target="_blank">Sudipta Sinha</a><br></td><td style="width:25%"><a href="http://www.hci.iis.u-tokyo.ac.jp/~ysato/" target="_blank">Yoichi Sato</a><br></td><td style="width:15%"><br></td></tr><tr><td><br></td><td>RIKEN AIP</td><td>Microsoft Research</td><td>The University of Tokyo</td><td style="width:12.5%"><br></td></tr></tbody></table><span style="font-size:large"><br> <br> CVPR 2017<br> </span></div>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="3" rowspan="1">
+<p><img src="./overview.jpg" alt="Method overview" width="800" height="190" /></p>
+</td>
+</tr>
+<tr>
+<td width="20%">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td align="left" width="60%">
+<p><span style="font-weight: bold;">Abstract</span> -- We propose a new multi-frame method for efficiently computing scene flow (dense depth and optical flow) and camera ego-motion for a dynamic scene observed from a moving stereo camera rig. Our technique also segments out moving objects from the rigid scene. In our method, we first estimate the disparity map and the 6-DOF camera motion using stereo matching and visual odometry. We then identify regions inconsistent with the estimated camera motion and compute per-pixel optical flow only at these regions. This flow proposal is fused with the camera motion-based flow proposal using fusion moves to obtain the final optical flow and motion segmentation. This unified framework benefits all four tasks – stereo, optical flow, visual odometry and motion segmentation leading to overall higher accuracy and efficiency. Our method is currently ranked third on the KITTI 2015 scene flow benchmark. Furthermore, our CPU implementation runs in 2-3 seconds per frame which is 1-3 orders of magnitude faster than the top six methods. We also report a thorough evaluation on challenging Sintel sequences with fast camera and object motion, where our method consistently outperforms OSF [30], which is currently ranked second on the KITTI benchmark.</p>
+</td>
+<td width="20%">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="3" align="center"><!--strong>We released our new dataset and evaluation kit!!</strong--><br /><br /></td>
+</tr>
+<tr>
+<td colspan="3" align="center"><a href="./cvpr2017-sceneflow-final.pdf"><img src="./paper_thumbnail.jpg" alt="Paper PDF" width="88" height="114" /></a> &nbsp;&nbsp;&nbsp;&nbsp; <!--a href="./cvpr2017-poster-final.pdf"><img src="./poster_thumbnail.jpg" alt="Poster PDF" width="233" height="114" /></a--></td>
+</tr>
+<td colspan="1" align="center">&nbsp;</td>
+<td colspan="1" align="center" width="75%">
+<ul>
+<li style="text-align: left;">Paper&nbsp;[<a href="./cvpr2017-sceneflow-final.pdf">pdf</a>]</li>
+<li style="text-align: left;">Extended supplementary&nbsp;[<a href="./cvpr2017-sceneflow-final-long.pdf">pdf</a>]</li>
+<!--li style="text-align: left;">Poster at CVPR 2016&nbsp;[<a href="./cvpr16-poster-final.pdf">pdf</a>]</li-->
+<!--li style="text-align: left;"><span style="color:red">Demonstration executable binaries now available!!</span> (WinBin)&nbsp;[<a href="https://github.com/t-taniai/TSS_CVPR2016_Demo" target="_blank">GitHub</a>]</li-->
+</ul>
+</td>
+<td colspan="1" align="center">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="3" align="center"><br />
+<h2>Supplementary Video</h2>
+<p>
+<iframe src="https://www.youtube.com/embed/hkj3sVaC6jg" width="853" height="480" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>&nbsp;</p>
+</blockquote>
+</body></html>
