@@ -43,7 +43,7 @@
                 </td>
                 <td width="60%" align="left">
                     <p>
-                        <span style="font-weight: bold;">Abstract</span> -- We present an accurate and efficient stereo matching method using local expansion moves, a new move making scheme
+                        <span style="font-weight: bold;">Abstract</span> -- <!--We present an accurate and efficient stereo matching method using local expansion moves, a new move making scheme
 using graph cuts. The local expansion moves are presented as many alpha-expansions defined for small grid regions. The local expansion
 moves extend the traditional expansion moves by two ways: localization and spatial propagation. By localization, we use different
 candidate alpha-labels according to the locations of local alpha-expansions. By spatial propagation, we design our local alpha-expansions to
@@ -52,7 +52,7 @@ Markov random field models with a huge or continuous label space using a randomi
 method has several advantages over previous approaches that are based on fusion moves or belief propagation; it produces
 submodular moves deriving a subproblem optimality; it helps find good, smooth, piecewise linear disparity maps; it is suitable for
 parallelization; it can use cost-volume filtering techniques for accelerating the matching cost computations. Our method is evaluated
-using the Middlebury stereo benchmark and shown to have the best performance in sub-pixel accuracy.
+using the Middlebury stereo benchmark and shown to have the best performance in sub-pixel accuracy.--> We present an accurate stereo matching method using local expansion moves based on graph cuts. This new move-making scheme is used to efficiently infer per-pixel 3D plane labels on a pairwise Markov random field (MRF) that effectively combines recently proposed slanted patch matching and curvature regularization terms. The local expansion moves are presented as many alpha-expansions defined for small grid regions. The local expansion moves extend traditional expansion moves by two ways: localization and spatial propagation. By localization, we use different candidate alpha-labels according to the locations of local alpha-expansions. By spatial propagation, we design our local alpha-expansions to propagate currently assigned labels for nearby regions. With this localization and spatial propagation, our method can efficiently infer MRF models with a continuous label space using randomized search. Our method has several advantages over previous approaches that are based on fusion moves or belief propagation; it produces submodular moves deriving a subproblem optimality; it helps find good, smooth, piecewise linear disparity maps; it is suitable for parallelization; it can use cost-volume filtering techniques for accelerating the matching cost computations. Even using a simple pairwise MRF, our method is shown to have best performance in the Middlebury stereo benchmark V2 and V3.
                     </p>
                 </td>
                 <td width="20%">&nbsp;</td>
