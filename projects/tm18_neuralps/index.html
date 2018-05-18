@@ -1,0 +1,91 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0058)http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Neural Inverse Rendering for General Reflectance Photometric Stereo (ICML 2018)</title></head>
+<body>
+<div id="StayFocusd-infobar" style="display: none;"><img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png" alt="" /> <span id="StayFocusd-infobar-msg"></span> <span id="StayFocusd-infobar-links"> <a id="StayFocusd-infobar-never-show" href="http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/#">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a id="StayFocusd-infobar-hide" href="http://rcv.kaist.ac.kr/~jspark/projects/light_calibration/#">hide once</a> </span></div>
+<table style="font-family: Times New Roman,Times,serif; text-align: left; margin-left: auto; margin-right: auto; width: 875px; height: 832px;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td colspan="3" rowspan="1">
+<div style="text-align: center;">&nbsp;</div>
+<h1 style="font-weight: normal; text-align: center;">Neural Inverse Rendering for<br />General Reflectance Photometric Stereo</h1>
+<div style="text-align:center">
+<table style="text-align:center;table-layout:auto;width:100%;font-size:large;" rules="none"><tbody><tr><td style="width:30%"><br></td><td style="width:20%"><a href="http://taniai.space/" target="_blank">Tatsunori Taniai</a><br></td><td style="width:20%"><a href="http://www.prefield.com/" target="_blank">Takanori Maehara</a><br></td><td style="width:30%"><br></td></tr><tr><td></td><td>RIKEN AIP</td><td>RIKEN AIP</td><td></td></tr></tbody></table><span style="font-size:large"><br>  ICML 2018<br> </span></div>
+</td>
+</tr>
+<tr>
+<td style="text-align: center;" colspan="3" rowspan="1">
+<p><br> <img src="./overview.jpg" alt="Method overview" width="450" /></p>
+</td>
+</tr>
+<tr>
+<td width="20%">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td align="left" width="60%">
+<p><span style="font-weight: bold;">Abstract</span> -- We present a novel convolutional neural network architecture for photometric stereo (Woodham, 1980), a problem of recovering 3D object surface normals from multiple images observed under varying illuminations. Despite its long history in computer vision, the problem still shows fundamental challenges for surfaces with unknown general reflectance properties (BRDFs). 
+Leveraging deep neural networks to learn complicated reflectance models is promising, but studies in this direction are very limited due to difficulties in  acquiring accurate ground truth for training and also in designing networks invariant to permutation of input images. In order to address these challenges, we propose a physics based unsupervised learning framework where surface normals and BRDFs are predicted by the network and fed into the rendering equation to synthesize observed images. The network weights are optimized during testing by minimizing reconstruction loss between observed and synthesized images. Thus, our learning process does not require ground truth normals or even pre-training on external images. Our method is shown to achieve the state-of-the-art performance on a challenging real-world scene benchmark.</p>
+</td>
+<td width="20%">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="3" align="center"><!--strong>We released our new dataset and evaluation kit!!</strong--><br /><br /></td>
+</tr>
+<tr>
+<td colspan="3" align="center"><a href="https://arxiv.org/abs/1802.10328" target="_blank"><img src="./paper_thumbnail.jpg" alt="Paper PDF" width="88" height="114" style="border:solid 0.5px gray" /></a> &nbsp;&nbsp;&nbsp;&nbsp; <!--a href="./icml18-poster.pdf"><img src="./poster_thumbnail.jpg" alt="Poster PDF" width="231" height="114" /></a--></td>
+</tr>
+<td colspan="1" align="center">&nbsp;</td>
+<td colspan="1" align="center" width="75%">
+<ul>
+<li style="text-align: left;">Preprint &nbsp;[<a href="https://arxiv.org/abs/1802.10328" target="_blank">pdf</a>]</li>
+<!--li style="text-align: left;">Poster at ICML 2018&nbsp;[<a href="./icml18-poster.pdf">pdf</a>]</li-->
+<li style="text-align: left;">Estimated normal results for DiLiGenT dataset&nbsp;[<a href="./icml18taniai_normals.zip">zip</a>]</li>
+<!--li style="text-align: left;"><span style="color:red">Demonstration executable binaries now available!!</span> (WinBin)&nbsp;[<a href="https://github.com/t-taniai/TSS_CVPR2016_Demo" target="_blank">GitHub</a>]</li-->
+</ul>
+</td>
+<td colspan="1" align="center"></td>
+</tr>
+<td colspan="1" align="center">&nbsp;</td>
+</tr>
+
+
+</tr><td />
+<td colspan="1" align="center"><pre width="50%" align="left" style="background-color: #EEEEEE; padding: 20pt; line-height: 7pt; font-size: 9pt">
+@inproceedings{Taniai18,<br />
+  author    = {Tatsunori Taniai and<br />
+               Maehara Takanori},<br />
+  title     = {{Neural Inverse Rendering for General Reflectance Photometric Stereo}},<br />
+  booktitle = {{Proceedings of the 35th International Conference on Machine Learning (ICML)}},<br />
+  year      = {2018},<br />
+}</pre></td><td />
+</tr>
+
+<tr>
+<td colspan="3" align="center"><br />
+<h2>Network Architecture</h2>
+<p>
+<img src="./network.png" width="650" /></p>
+</td>
+</tr>
+<tr>
+<td colspan="3" align="center"><br />
+<h2>Benchmark results on DiLiGenT dataset</h2>
+<p>
+<img src="./benchmark.png" width="650" /></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>&nbsp;</p>
+</blockquote>
+</body></html>
