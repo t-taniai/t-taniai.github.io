@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,10 +28,6 @@
             border-bottom: 1px solid #e0e0e0;
             z-index: 1000;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .profile p {
-            margin-top: 1.5ex;
-            margin-bottom: 1.5ex;
         }
         nav {
             display: flex;
@@ -142,9 +138,12 @@
         }
         /* Aboutセクションのスタイル */
         #about {
+        }
+        #about-content {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            justify-content: flex-start;
             gap: 20px;
         }
         #about .about-text {
@@ -159,6 +158,11 @@
             height: auto;
             border-radius: 50%;
         }
+        #about p {
+            margin-top: 1.5ex;
+            margin-bottom: 1.5ex;
+            flex: 1;
+        }
         @media (max-width: 768px) {
             nav {
                 flex-direction: column;
@@ -169,11 +173,29 @@
             }
             .project {
                 flex-direction: column; /* アイコンとテキストを縦に並べる */
-                align-items: flex-start; /* 左揃えに変更（中央揃えも可） */
+                align-items: center; /* 左揃えに変更（中央揃えも可） */
+                text-align: center;
             }
             .project img {
                 margin-right: 0; /* 縦並びのため右の余白を削除 */
                 margin-bottom: 10px; /* アイコンとテキストの間に余白を追加 */
+                
+            }
+            #about {
+                flex-direction: column; /* スマホでは縦に並べる */
+                align-items: center; /* 中央揃え */
+                text-align: center; /* テキストも中央揃え */
+            }
+            #about img {
+                margin-right: 0; /* 縦並びのため右の余白を削除 */
+                margin-bottom: 20px; /* テキストとの間に余白を追加 */
+                order: -1;
+            }
+            #about p {
+                order: 0;
+            }
+            h2 {
+                text-align: center;
             }
         }
     </style>
@@ -227,6 +249,7 @@
     <div class="about-photo">
         <img src="./myphoto.jpg" alt="Tatsunori Taniai">
     </div>
+
 </section>
 
         <!-- Research Projects Section -->
