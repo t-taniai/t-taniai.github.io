@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -175,11 +175,15 @@
                 flex-direction: column; /* アイコンとテキストを縦に並べる */
                 align-items: center; /* 左揃えに変更（中央揃えも可） */
                 text-align: center;
+                padding: 0;
+                text-indent: 0;
             }
             .project img {
-                margin-right: 0; /* 縦並びのため右の余白を削除 */
-                margin-bottom: 10px; /* アイコンとテキストの間に余白を追加 */
-                
+                display: block;
+                margin: 20px auto 0px;
+                padding: 0;
+                width: 75%;
+                height: auto;
             }
             #about {
                 flex-direction: column; /* スマホでは縦に並べる */
@@ -188,6 +192,7 @@
             }
             #about img {
                 margin-right: 0; /* 縦並びのため右の余白を削除 */
+                margin-left: 0; /* 縦並びのため右の余白を削除 */
                 margin-bottom: 20px; /* テキストとの間に余白を追加 */
                 order: -1;
             }
@@ -196,6 +201,8 @@
             }
             h2 {
                 text-align: center;
+                padding: 0;
+                margin: 0;
             }
         }
     </style>
@@ -258,7 +265,7 @@
             <ul>
 
 <li class="project">
-    <a href="https://omron-sinicx.github.io/crystalformer/" target="_blank"><img src="projects/iclr24_crystalformer/icon.png" alt="Crystalformer"></a>
+    <a href="https://omron-sinicx.github.io/crystalformer/" target="_blank"><img src="images/icon.png" alt="Crystalformer"></a>
     <div>
         <h3><a href="https://omron-sinicx.github.io/crystalformer/" target="_blank">Crystalformer: Infinitely Connected Attention for Periodic Structure Encoding</a></h3>
         <p><strong>ICLR 2024</strong></p>
