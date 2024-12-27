@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/louisfacun/scholar-icons@master/css/scholar-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- scholar-icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- scholar-icons -->
     <title>Tatsunori Taniai | 谷合 竜典</title>
     <style>
         /* リセット */
@@ -14,12 +16,14 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             background-color: #ffffff;
             color: #333;
         }
+
         header {
             position: fixed;
             top: 0;
@@ -29,113 +33,155 @@
             z-index: 1000;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
         }
-        .external-links, .menu {
+
+        .external-links,
+        .menu {
             display: flex;
             align-items: center;
         }
-        .external-links a, .menu a {
+
+        .external-links a,
+        .menu a {
             margin: 0 10px;
             text-decoration: none;
-            color: #333; /* リンクのテキスト色 */
+            color: #333;
+            /* リンクのテキスト色 */
         }
+
         .external-links img {
             width: 24px;
             height: 24px;
             vertical-align: middle;
         }
+
         .menu a {
             font-weight: bold;
         }
+
         .menu a:hover {
             color: #007BFF;
         }
+
         .menu a:visited {
-            color: #333; /* リンクの色をクリック後も変化なし */
+            color: #333;
+            /* リンクの色をクリック後も変化なし */
         }
+
         .redtext {
             color: #009999;
         }
+
         ul {
-            list-style-position: inside; /* リストの位置調整 */
+            list-style-position: inside;
+            /* リストの位置調整 */
         }
+
         ul {
-            margin-left: 1em; /* 適切な位置にインデントを追加 */
+            margin-left: 1em;
+            /* 適切な位置にインデントを追加 */
         }
+
         li {
             text-indent: -2em;
-            padding-left: 1em; /* 左側にインデント（スペース）を追加 */
+            padding-left: 1em;
+            /* 左側にインデント（スペース）を追加 */
         }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 100px 20px 20px;
         }
+
         .project {
             display: flex;
-            align-items: flex-start; /* テキストを画像の上部に揃える */
+            align-items: flex-start;
+            /* テキストを画像の上部に揃える */
             align-items: center;
             margin-bottom: 20px;
         }
+
         .project img {
             width: 150px;
             height: 150px;
             margin-right: 50px;
             display: block;
         }
+
         .project div {
             flex: 1;
         }
-        h1, h2 {
+
+        h1,
+        h2 {
             margin-bottom: 20px;
             color: #000;
         }
+
         .project h3 {
-            margin-top: 10px; /* h3 の上部に余白を追加 */
-            margin-bottom: 5px; /* h3 の下部に余白を追加 */
-            line-height: 1.4; /* 行間も調整して読みやすく */
+            margin-top: 10px;
+            /* h3 の上部に余白を追加 */
+            margin-bottom: 5px;
+            /* h3 の下部に余白を追加 */
+            line-height: 1.4;
+            /* 行間も調整して読みやすく */
             white-space: normal;
             padding: 0px;
         }
+
         h3 {
-            margin-top: 20px; /* h3 の上部に余白を追加 */
-            margin-bottom: 5px; /* h3 の下部に余白を追加 */
-            line-height: 1.4; /* 行間も調整して読みやすく */
+            margin-top: 20px;
+            /* h3 の上部に余白を追加 */
+            margin-bottom: 5px;
+            /* h3 の下部に余白を追加 */
+            line-height: 1.4;
+            /* 行間も調整して読みやすく */
         }
+
         section {
             margin-bottom: 40px;
         }
+
         section h3 a:visited {
             color: #000;
         }
+
         section h3 a:hover {
             color: #007BFF;
         }
+
         section h3 a {
             text-decoration: none;
             color: #000;
         }
+
         section a:visited {
             color: #cc3366;
         }
+
         section a:hover {
             color: #FFC0CB;
         }
+
         section a {
             text-decoration: none;
             color: #cc3366;
         }
+
         footer {
             text-align: center;
             padding: 20px;
             background-color: #f9f9f9;
             border-top: 1px solid #e0e0e0;
         }
+
         /* Aboutセクションのスタイル */
         #about {
             display: flex;
@@ -144,38 +190,50 @@
             justify-content: flex-start;
             gap: 20px;
         }
+
         #about .about-text {
             flex: 2;
         }
+
         #about .about-photo {
             flex: 1;
             text-align: center;
         }
+
         #about .about-photo img {
             width: 150px;
             height: auto;
             border-radius: 50%;
         }
+
         #about p {
             margin-top: 1.5ex;
             margin-bottom: 1.5ex;
             flex: 1;
         }
+
         @media (max-width: 768px) {
             nav {
                 flex-direction: column;
                 text-align: center;
             }
-            .external-links, .menu {
+
+            .external-links,
+            .menu {
                 margin-bottom: 10px;
             }
+
             .project {
-                flex-direction: column; /* アイコンとテキストを縦に並べる */
-                align-items: center; /* 左揃えに変更（中央揃えも可） */
+                flex-direction: column;
+                /* アイコンとテキストを縦に並べる */
+                align-items: center;
+                /* 左揃えに変更（中央揃えも可） */
                 text-align: center;
                 padding: 0;
+                margin: 0;
                 text-indent: 0;
             }
+
             .project img {
                 display: block;
                 margin: 20px auto 0px;
@@ -184,20 +242,34 @@
                 min-width: 250px;
                 height: auto;
             }
-            #about {
-                flex-direction: column; /* スマホでは縦に並べる */
-                align-items: center; /* 中央揃え */
-                text-align: center; /* テキストも中央揃え */
+
+            #research ul {
+                margin: 0;
             }
+
+            #about {
+                flex-direction: column;
+                /* スマホでは縦に並べる */
+                align-items: center;
+                /* 中央揃え */
+                text-align: center;
+                /* テキストも中央揃え */
+            }
+
             #about img {
-                margin-right: 0; /* 縦並びのため右の余白を削除 */
-                margin-left: 0; /* 縦並びのため右の余白を削除 */
-                margin-bottom: 20px; /* テキストとの間に余白を追加 */
+                margin-right: 0;
+                /* 縦並びのため右の余白を削除 */
+                margin-left: 0;
+                /* 縦並びのため右の余白を削除 */
+                margin-bottom: 20px;
+                /* テキストとの間に余白を追加 */
                 order: -1;
             }
+
             #about p {
                 order: 0;
             }
+
             h2 {
                 text-align: center;
                 padding: 0;
@@ -206,6 +278,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -223,7 +296,8 @@
                 <a href="https://www.researchgate.net/profile/Tatsunori_Taniai" target="_blank" title="ResearchGate">
                     <i class="fab fa-researchgate"></i>
                 </a>
-                <a href="https://www.semanticscholar.org/author/Tatsunori-Taniai/2274390" target="_blank" title="Semantic Scholar">
+                <a href="https://www.semanticscholar.org/author/Tatsunori-Taniai/2274390" target="_blank"
+                    title="Semantic Scholar">
                     <i class="si si-semantic-scholar"></i>
                 </a>
                 <a href="https://github.com/t-taniai" target="_blank" title="GitHub">
@@ -244,369 +318,548 @@
     <main class="container">
         <!-- About Section -->
         <section id="about">
-    <div class="about-text">
-        <h1>Tatsunori Taniai, Ph.D.<br />谷合 竜典</h1>
-        <div class="profile">
-        <p><strong>I am a Senior Researcher in the Knowledge Computing Group at OMRON SINIC X Corporation</strong>, based in Tokyo, Japan. Through my research, I am pursuing "Principled AI," a new methodology in the era of deep learning. My research interests include geometric and photometric 3D vision and physics-informed machine learning.</p><p>
-        <strong>Call for Interns</strong>: I am seeking an intern to work intensively with me on a geometry-related problem in 3D computer vision or physics-informed machine learning, with the goal of publishing a paper at CVPR, ICCV, ECCV, ICML, NeurIPS, or ICLR.</p>
-        <p>Email: tatsunori.taniai [at] sinicx.com</p>
-        </div>
-    </div>
-    <div class="about-photo">
-        <img src="./myphoto.jpg" alt="Tatsunori Taniai">
-    </div>
+            <div class="about-text">
+                <h1>Tatsunori Taniai, Ph.D.<br />谷合 竜典</h1>
+                <div class="profile">
+                    <p><strong>I am a Senior Researcher in the Knowledge Computing Group at OMRON SINIC X
+                            Corporation</strong>, based in Tokyo, Japan. Through my research, I am pursuing "Principled
+                        AI," a new methodology in the era of deep learning. My research interests include geometric and
+                        photometric 3D vision and physics-informed machine learning.</p>
+                    <p>
+                        <strong>Call for Interns</strong>: I am seeking an intern to work intensively with me on a
+                        geometry-related problem in 3D computer vision or physics-informed machine learning, with the
+                        goal of publishing a paper at CVPR, ICCV, ECCV, ICML, NeurIPS, or ICLR.
+                    </p>
+                    <p>Email: tatsunori.taniai [at] sinicx.com</p>
+                </div>
+            </div>
+            <div class="about-photo">
+                <img src="./myphoto.jpg" alt="Tatsunori Taniai">
+            </div>
 
-</section>
+        </section>
 
         <!-- Research Projects Section -->
         <section id="research">
             <h2>Research Projects</h2>
             <ul>
 
-<li class="project">
-    <a href="https://omron-sinicx.github.io/crystalformer/" target="_blank"><img src="./projects/iclr24_crystalformer/icon.png" alt="Crystalformer"></a>
-    <div>
-        <h3><a href="https://omron-sinicx.github.io/crystalformer/" target="_blank">Crystalformer: Infinitely Connected Attention for Periodic Structure Encoding</a></h3>
-        <p><strong>ICLR 2024</strong></p>
-        <p>Tatsunori Taniai, Ryo Igarashi, Yuta Suzuki, Naoya Chiba, Kotaro Saito, Yoshitaka Ushiku, Kanta Ono</p>
-        <p><a target="_blank" href="projects/iclr24_crystalformer/iclr24_paper.pdf">Preprint</a> / <a target="_blank" href="https://omron-sinicx.github.io/crystalformer/">Project</a> / <a href="https://github.com/omron-sinicx/crystalformer" target="_blank">Code</a></p>
-    </div>
-</li>
+                <li class="project">
+                    <a href="https://omron-sinicx.github.io/crystalformer/" target="_blank"><img
+                            src="https://taniai.space/projects/iclr24_crystalformer/icon.png" alt="Crystalformer"></a>
+                    <div>
+                        <h3><a href="https://omron-sinicx.github.io/crystalformer/" target="_blank">Crystalformer:
+                                Infinitely Connected Attention for Periodic Structure Encoding</a></h3>
+                        <p><strong>ICLR 2024</strong></p>
+                        <p>Tatsunori Taniai, Ryo Igarashi, Yuta Suzuki, Naoya Chiba, Kotaro Saito, Yoshitaka Ushiku,
+                            Kanta Ono</p>
+                        <p><a target="_blank" href="projects/iclr24_crystalformer/iclr24_paper.pdf">Preprint</a> / <a
+                                target="_blank" href="https://omron-sinicx.github.io/crystalformer/">Project</a> / <a
+                                href="https://github.com/omron-sinicx/crystalformer" target="_blank">Code</a></p>
+                    </div>
+                </li>
 
-<li class="project">
-    <a href="https://github.com/omron-sinicx/neural-structure-field" target="_blank"><img src="projects/nesf/icon.png" alt="Neural Structure Fields"></a>
-    <div>
-        <h3><a href="https://github.com/omron-sinicx/neural-structure-field" target="_blank">Neural structure fields with application to crystal structure autoencoders</a></h3>
-        <p><strong>Communication Materials 2023</strong></p>
-        <p>Naoya Chiba, Yuta Suzuki, Tatsunori Taniai, Ryo Igarashi, Kotaro Saito, Yoshitaka Ushiku, Kanta Ono</p>
-        <p><a target="_blank" href="https://www.nature.com/articles/s43246-023-00432-w">Open Access</a> / <a href="https://github.com/omron-sinicx/neural-structure-field" target="_blank">Code</a></p>
-    </div>
-</li>
+                <li class="project">
+                    <a href="https://github.com/omron-sinicx/neural-structure-field" target="_blank"><img
+                            src="projects/nesf/icon.png" alt="Neural Structure Fields"></a>
+                    <div>
+                        <h3><a href="https://github.com/omron-sinicx/neural-structure-field" target="_blank">Neural
+                                structure fields with application to crystal structure autoencoders</a></h3>
+                        <p><strong>Communication Materials 2023</strong></p>
+                        <p>Naoya Chiba, Yuta Suzuki, Tatsunori Taniai, Ryo Igarashi, Kotaro Saito, Yoshitaka Ushiku,
+                            Kanta Ono</p>
+                        <p><a target="_blank" href="https://www.nature.com/articles/s43246-023-00432-w">Open Access</a>
+                            / <a href="https://github.com/omron-sinicx/neural-structure-field" target="_blank">Code</a>
+                        </p>
+                    </div>
+                </li>
 
-<li class="project">
-    <a href="https://omron-sinicx.github.io/safe-rover-navi/" target="_blank"><img src="projects/safe-rover-navi/icon.png" alt="Risk-aware Path Planning"></a>
-    <div>
-        <h3><a href="https://omron-sinicx.github.io/safe-rover-navi/" target="_blank">Risk-aware Path Planning via Probabilistic Fusion of Traversability Prediction for Planetary Rovers on Heterogeneous Terrains</a></h3>
-        <p><strong>ICRA 2023</strong></p>
-        <p>Masafumi Endo, Tatsunori Taniai, Ryo Yonetani, Genya Ishigami</p>
-        <p><a target="_blank" href="projects/safe-rover-navi/icra23-paper-copyright.pdf">Preprint</a> / <a target="_blank" href="https://omron-sinicx.github.io/safe-rover-navi/">Project</a> / <a href="https://github.com/omron-sinicx/safe-rover-navi" target="_blank">Code</a></p>
-    </div>
-</li>
+                <li class="project">
+                    <a href="https://omron-sinicx.github.io/safe-rover-navi/" target="_blank"><img
+                            src="projects/safe-rover-navi/icon.png" alt="Risk-aware Path Planning"></a>
+                    <div>
+                        <h3><a href="https://omron-sinicx.github.io/safe-rover-navi/" target="_blank">Risk-aware Path
+                                Planning via Probabilistic Fusion of Traversability Prediction for Planetary Rovers on
+                                Heterogeneous Terrains</a></h3>
+                        <p><strong>ICRA 2023</strong></p>
+                        <p>Masafumi Endo, Tatsunori Taniai, Ryo Yonetani, Genya Ishigami</p>
+                        <p><a target="_blank" href="projects/safe-rover-navi/icra23-paper-copyright.pdf">Preprint</a> /
+                            <a target="_blank" href="https://omron-sinicx.github.io/safe-rover-navi/">Project</a> / <a
+                                href="https://github.com/omron-sinicx/safe-rover-navi" target="_blank">Code</a></p>
+                    </div>
+                </li>
 
-<li class="project">
-    <a href="https://github.com/quantumbeam/materials-concept-learning" target="_blank"><img src="projects/materials_concept/icon.png" alt="Self-supervised learning of materials concepts"></a>
-    <div>
-        <h3><a href="https://github.com/quantumbeam/materials-concept-learning" target="_blank">Self-supervised learning of materials concepts from crystal structures via deep neural networks</a></h3>
-        <p><strong>Machine Learning: Science and Technology 2022</strong></p>
-        <p>Yuta Suzuki, Tatsunori Taniai, Kotaro Saito, Yoshitaka Ushiku, Kanta Ono</p>
-        <p><a target="_blank" href="https://iopscience.iop.org/article/10.1088/2632-2153/aca23d/meta">Open Access</a> / <a href="https://github.com/quantumbeam/materials-concept-learning" target="_blank">Code</a></p>
-    </div>
-</li>
+                <li class="project">
+                    <a href="https://github.com/quantumbeam/materials-concept-learning" target="_blank"><img
+                            src="projects/materials_concept/icon.png"
+                            alt="Self-supervised learning of materials concepts"></a>
+                    <div>
+                        <h3><a href="https://github.com/quantumbeam/materials-concept-learning"
+                                target="_blank">Self-supervised learning of materials concepts from crystal structures
+                                via deep neural networks</a></h3>
+                        <p><strong>Machine Learning: Science and Technology 2022</strong></p>
+                        <p>Yuta Suzuki, Tatsunori Taniai, Kotaro Saito, Yoshitaka Ushiku, Kanta Ono</p>
+                        <p><a target="_blank"
+                                href="https://iopscience.iop.org/article/10.1088/2632-2153/aca23d/meta">Open Access</a>
+                            / <a href="https://github.com/quantumbeam/materials-concept-learning"
+                                target="_blank">Code</a></p>
+                    </div>
+                </li>
 
-<li class="project">
-    <a href="https://omron-sinicx.github.io/lcqp/" target="_blank"><img src="projects/lcqp/icon.png" alt="Quasistatic contact-rich manipulation"></a>
-    <div>
-        <h3><a href="https://omron-sinicx.github.io/lcqp/" target="_blank">Quasistatic contact-rich manipulation via linear complementarity quadratic programming</a></h3>
-        <p><strong>IROS 2022</strong></p>
-        <p>Sotaro Katayama, Tatsunori Taniai, Kazutoshi Tanaka</p>
-        <p><a target="_blank" href="projects/lcqp/IROS2022_LCQP_final.pdf">Preprint</a> / <a href="https://omron-sinicx.github.io/lcqp/">Project</a> / <a href="https://github.com/omron-sinicx/lcqp" target="_blank">Code</a></p>
-    </div>
-</li>
+                <li class="project">
+                    <a href="https://omron-sinicx.github.io/lcqp/" target="_blank"><img src="projects/lcqp/icon.png"
+                            alt="Quasistatic contact-rich manipulation"></a>
+                    <div>
+                        <h3><a href="https://omron-sinicx.github.io/lcqp/" target="_blank">Quasistatic contact-rich
+                                manipulation via linear complementarity quadratic programming</a></h3>
+                        <p><strong>IROS 2022</strong></p>
+                        <p>Sotaro Katayama, Tatsunori Taniai, Kazutoshi Tanaka</p>
+                        <p><a target="_blank" href="projects/lcqp/IROS2022_LCQP_final.pdf">Preprint</a> / <a
+                                href="https://omron-sinicx.github.io/lcqp/">Project</a> / <a
+                                href="https://github.com/omron-sinicx/lcqp" target="_blank">Code</a></p>
+                    </div>
+                </li>
 
-<li class="project">
-    <a href="https://omron-sinicx.github.io/neural-astar/" target="_blank"><img src="projects/neural_astar/icon2.png" alt="Path Planning using Neural A* Search"></a>
-    <div>
-        <h3><a href="https://omron-sinicx.github.io/neural-astar/" target="_blank">Path Planning using Neural A* Search</a></h3>
-        <p><strong>ICML 2021</strong></p>
-        <p>Ryo Yonetani*, Tatsunori Taniai*, Mohammadamin Barekatain, Mai Nishimura, Asako Kanezaki</p>
-        <p><a target="_blank" href="https://arxiv.org/abs/2009.07476">Preprint</a> / <a href="https://omron-sinicx.github.io/neural-astar/">Project</a> / <a href="https://github.com/omron-sinicx/neural-astar" target="_blank">Code</a></p>
-    </div>
-</li>
+                <li class="project">
+                    <a href="https://omron-sinicx.github.io/neural-astar/" target="_blank"><img
+                            src="projects/neural_astar/icon2.png" alt="Path Planning using Neural A* Search"></a>
+                    <div>
+                        <h3><a href="https://omron-sinicx.github.io/neural-astar/" target="_blank">Path Planning using
+                                Neural A* Search</a></h3>
+                        <p><strong>ICML 2021</strong></p>
+                        <p>Ryo Yonetani*, Tatsunori Taniai*, Mohammadamin Barekatain, Mai Nishimura, Asako Kanezaki</p>
+                        <p><a target="_blank" href="https://arxiv.org/abs/2009.07476">Preprint</a> / <a
+                                href="https://omron-sinicx.github.io/neural-astar/">Project</a> / <a
+                                href="https://github.com/omron-sinicx/neural-astar" target="_blank">Code</a></p>
+                    </div>
+                </li>
 
-<li class="project">
-    <a href="./projects/tm18_neuralps/" target="_blank"><img src="projects/tm18_neuralps/icon.png" alt="Neural Inverse Rendering"></a>
-    <div>
-        <h3><a href="./projects/tm18_neuralps/" target="_blank">Neural Inverse Rendering for General Reflectance Photometric Stereo</a></h3>
-        <p><strong>ICML 2018</strong></p>
-        <p>Tatsunori Taniai, Takanori Maehara</p>
-        <p><a href="./projects/tm18_neuralps/icml18-neuralps.pdf">Preprint</a> / <a href="./projects/tm18_neuralps/">Project</a> / <a href="https://github.com/t-taniai/neuralps" target="_blank">Code</a></p>
-    </div>
-</li>
+                <li class="project">
+                    <a href="./projects/tm18_neuralps/" target="_blank"><img src="projects/tm18_neuralps/icon.png"
+                            alt="Neural Inverse Rendering"></a>
+                    <div>
+                        <h3><a href="./projects/tm18_neuralps/" target="_blank">Neural Inverse Rendering for General
+                                Reflectance Photometric Stereo</a></h3>
+                        <p><strong>ICML 2018</strong></p>
+                        <p>Tatsunori Taniai, Takanori Maehara</p>
+                        <p><a href="./projects/tm18_neuralps/icml18-neuralps.pdf">Preprint</a> / <a
+                                href="./projects/tm18_neuralps/">Project</a> / <a
+                                href="https://github.com/t-taniai/neuralps" target="_blank">Code</a></p>
+                    </div>
+                </li>
 
-<li class="project">
-    <a href="./projects/stereo#journal" target="_blank"><img src="projects/stereo/journal_icon.png" alt="Continuous 3D Label Stereo Matching"></a>
-    <div>
-        <h3><a href="./projects/stereo#journal" target="_blank">Continuous 3D Label Stereo Matching using Local Expansion Moves</a></h3>
-        <p><strong>TPAMI 2018</strong></p>
-        <p>Tatsunori Taniai, Yasuyuki Matsushita, Yoichi Sato, Takeshi Naemura</p>
-        <p><a href="http://arxiv.org/abs/1603.08328" target="_blank">Preprint</a> / <a href="./projects/stereo#journal">Project</a> / <a href="https://github.com/t-taniai/LocalExpStereo" target="_blank">Code</a></p>
-    </div>
-</li>
+                <li class="project">
+                    <a href="./projects/stereo#journal" target="_blank"><img src="projects/stereo/journal_icon.png"
+                            alt="Continuous 3D Label Stereo Matching"></a>
+                    <div>
+                        <h3><a href="./projects/stereo#journal" target="_blank">Continuous 3D Label Stereo Matching
+                                using Local Expansion Moves</a></h3>
+                        <p><strong>TPAMI 2018</strong></p>
+                        <p>Tatsunori Taniai, Yasuyuki Matsushita, Yoichi Sato, Takeshi Naemura</p>
+                        <p><a href="http://arxiv.org/abs/1603.08328" target="_blank">Preprint</a> / <a
+                                href="./projects/stereo#journal">Project</a> / <a
+                                href="https://github.com/t-taniai/LocalExpStereo" target="_blank">Code</a></p>
+                    </div>
+                </li>
 
-<li class="project">
-    <a href="./projects/3dv17_sgmp/" target="_blank"><img src="./projects/3dv17_sgmp/icon.png" alt="Semi-Global Stereo Matching"></a>
-    <div>
-        <h3><a href="./projects/3dv17_sgmp/" target="_blank">Semi-Global Stereo Matching with Surface Orientation Priors</a></h3>
-        <p><strong>3DV 2017 Spotlight</strong></p>
-        <p>Daniel Scharstein, Tatsunori Taniai, Sudipta N. Sinha</p>
-        <p><a href="./projects/3dv17_sgmp/sgmp-3dv-2017.pdf">Preprint (extended)</a> / <a href="./projects/3dv17_sgmp/3DV2017_poster_final.pdf">Poster</a> / <a href="./projects/3dv17_sgmp/3DV2017_spotlight_fina.pptx">Slides</a></p>
-    </div>
-</li>
+                <li class="project">
+                    <a href="./projects/3dv17_sgmp/" target="_blank"><img src="./projects/3dv17_sgmp/icon.png"
+                            alt="Semi-Global Stereo Matching"></a>
+                    <div>
+                        <h3><a href="./projects/3dv17_sgmp/" target="_blank">Semi-Global Stereo Matching with Surface
+                                Orientation Priors</a></h3>
+                        <p><strong>3DV 2017 Spotlight</strong></p>
+                        <p>Daniel Scharstein, Tatsunori Taniai, Sudipta N. Sinha</p>
+                        <p><a href="./projects/3dv17_sgmp/sgmp-3dv-2017.pdf">Preprint (extended)</a> / <a
+                                href="./projects/3dv17_sgmp/3DV2017_poster_final.pdf">Poster</a> / <a
+                                href="./projects/3dv17_sgmp/3DV2017_spotlight_fina.pptx">Slides</a></p>
+                    </div>
+                </li>
 
-<li class="project">
-    <a href="./projects/cvpr17_fsf" target="_blank"><img src="projects/cvpr17_fsf/icon.png" alt="Fast Multi-frame Stereo Scene Flow"></a>
-    <div>
-        <h3><a href="./projects/cvpr17_fsf" target="_blank">Fast Multi-frame Stereo Scene Flow with Motion Segmentation</a></h3>
-        <p><strong>CVPR 2017</strong></p>
-        <p>Tatsunori Taniai, Sudipta N. Sinha, Yoichi Sato</p>
-        <p><a href="./projects/cvpr17_fsf/cvpr2017-sceneflow-final.pdf">Preprint</a> / <a href="./projects/cvpr17_fsf/cvpr2017-sceneflow-final-long.pdf">Preprint (extended)</a> / <a href="./projects/cvpr17_fsf/cvpr17-poster-v3_fixed.pdf">Poster</a> / <a href="./projects/cvpr17_fsf">Project</a> / <a href="https://github.com/t-taniai/FSF_CVPR2017_Demo" target="_blank">Demo</a></p>
-    </div>
-</li>
+                <li class="project">
+                    <a href="./projects/cvpr17_fsf" target="_blank"><img src="projects/cvpr17_fsf/icon.png"
+                            alt="Fast Multi-frame Stereo Scene Flow"></a>
+                    <div>
+                        <h3><a href="./projects/cvpr17_fsf" target="_blank">Fast Multi-frame Stereo Scene Flow with
+                                Motion Segmentation</a></h3>
+                        <p><strong>CVPR 2017</strong></p>
+                        <p>Tatsunori Taniai, Sudipta N. Sinha, Yoichi Sato</p>
+                        <p><a href="./projects/cvpr17_fsf/cvpr2017-sceneflow-final.pdf">Preprint</a> / <a
+                                href="./projects/cvpr17_fsf/cvpr2017-sceneflow-final-long.pdf">Preprint (extended)</a> /
+                            <a href="./projects/cvpr17_fsf/cvpr17-poster-v3_fixed.pdf">Poster</a> / <a
+                                href="./projects/cvpr17_fsf">Project</a> / <a
+                                href="https://github.com/t-taniai/FSF_CVPR2017_Demo" target="_blank">Demo</a></p>
+                    </div>
+                </li>
 
-<li class="project">
-    <a href="./projects/cvpr16_dccs" target="_blank"><img src="projects/cvpr16_dccs/icon.png" alt="Joint Recovery of Dense Correspondence and Cosegmentation"></a>
-    <div>
-        <h3><a href="./projects/cvpr16_dccs" target="_blank">Joint Recovery of Dense Correspondence and Cosegmentation in Two Images</a></h3>
-        <p><strong>CVPR 2016</strong></p>
-        <p>Tatsunori Taniai, Sudipta N. Sinha, Yoichi Sato</p>
-        <p><a href="./projects/cvpr16_dccs/cvpr2016-dccs-final.pdf">Preprint</a> / <a href="./projects/cvpr16_dccs/cvpr2016-dccs-final-long.pdf">Preprint (extended)</a> / <a href="./projects/cvpr16_dccs/cvpr16-poster-final.pdf">Poster</a> / <a href="./projects/cvpr16_dccs">Project</a> / <a href="https://github.com/t-taniai/TSS_CVPR2016_Demo" target="_blank">Demo</a></p>
-    </div>
-</li>
+                <li class="project">
+                    <a href="./projects/cvpr16_dccs" target="_blank"><img src="projects/cvpr16_dccs/icon.png"
+                            alt="Joint Recovery of Dense Correspondence and Cosegmentation"></a>
+                    <div>
+                        <h3><a href="./projects/cvpr16_dccs" target="_blank">Joint Recovery of Dense Correspondence and
+                                Cosegmentation in Two Images</a></h3>
+                        <p><strong>CVPR 2016</strong></p>
+                        <p>Tatsunori Taniai, Sudipta N. Sinha, Yoichi Sato</p>
+                        <p><a href="./projects/cvpr16_dccs/cvpr2016-dccs-final.pdf">Preprint</a> / <a
+                                href="./projects/cvpr16_dccs/cvpr2016-dccs-final-long.pdf">Preprint (extended)</a> / <a
+                                href="./projects/cvpr16_dccs/cvpr16-poster-final.pdf">Poster</a> / <a
+                                href="./projects/cvpr16_dccs">Project</a> / <a
+                                href="https://github.com/t-taniai/TSS_CVPR2016_Demo" target="_blank">Demo</a></p>
+                    </div>
+                </li>
 
-<li class="project">
-    <a href="./projects/cvpr15_sdc/" target="_blank"><img src="projects/cvpr15_sdc/sdc_icon.png" alt="Superdifferential Cuts for Binary Energies"></a>
-    <div>
-        <h3><a href="./projects/cvpr15_sdc/" target="_blank">Superdifferential Cuts for Binary Energies</a></h3>
-        <p><strong>CVPR 2015</strong></p>
-        <p>Tatsunori Taniai, Yasuyuki Matsushita, Takeshi Naemura</p>
-        <p><a href="./projects/cvpr15_sdc/cvpr2015-seg-final.pdf">Preprint</a> / <a href="./projects/cvpr15_sdc/cvpr2015-seg-abstract.pdf">ExtAbst</a> / <a href="./projects/cvpr15_sdc/cvpr2015-seg-poster.pdf">Poster</a> / <a href="./projects/cvpr15_sdc">Project</a> / <a href="https://github.com/t-taniai/SDC_CVPR2015" target="_blank">Code</a></p>
-    </div>
-</li>
+                <li class="project">
+                    <a href="./projects/cvpr15_sdc/" target="_blank"><img src="projects/cvpr15_sdc/sdc_icon.png"
+                            alt="Superdifferential Cuts for Binary Energies"></a>
+                    <div>
+                        <h3><a href="./projects/cvpr15_sdc/" target="_blank">Superdifferential Cuts for Binary
+                                Energies</a></h3>
+                        <p><strong>CVPR 2015</strong></p>
+                        <p>Tatsunori Taniai, Yasuyuki Matsushita, Takeshi Naemura</p>
+                        <p><a href="./projects/cvpr15_sdc/cvpr2015-seg-final.pdf">Preprint</a> / <a
+                                href="./projects/cvpr15_sdc/cvpr2015-seg-abstract.pdf">ExtAbst</a> / <a
+                                href="./projects/cvpr15_sdc/cvpr2015-seg-poster.pdf">Poster</a> / <a
+                                href="./projects/cvpr15_sdc">Project</a> / <a
+                                href="https://github.com/t-taniai/SDC_CVPR2015" target="_blank">Code</a></p>
+                    </div>
+                </li>
 
-<li class="project">
-    <a href="./projects/stereo#conference" target="_blank"><img src="projects/stereo/continuousStereo.png" alt="Graph Cut based Continuous Stereo Matching"></a>
-    <div>
-        <h3><a href="./projects/stereo#conference" target="_blank">Graph Cut based Continuous Stereo Matching using Locally Shared Labels</a></h3>
-        <p><strong>CVPR 2014</strong></p>
-        <p>Tatsunori Taniai, Yasuyuki Matsushita, Takeshi Naemura</p>
-        <p><a href="./projects/stereo/cvpr2014-stereo_final.pdf">Preprint</a> / <a href="./projects/stereo/cvpr2014-stereo-poster.pdf">Poster</a> / <a href="./projects/stereo#conference">Project</a></p>
-    </div>
-</li>
+                <li class="project">
+                    <a href="./projects/stereo#conference" target="_blank"><img
+                            src="projects/stereo/continuousStereo.png"
+                            alt="Graph Cut based Continuous Stereo Matching"></a>
+                    <div>
+                        <h3><a href="./projects/stereo#conference" target="_blank">Graph Cut based Continuous Stereo
+                                Matching using Locally Shared Labels</a></h3>
+                        <p><strong>CVPR 2014</strong></p>
+                        <p>Tatsunori Taniai, Yasuyuki Matsushita, Takeshi Naemura</p>
+                        <p><a href="./projects/stereo/cvpr2014-stereo_final.pdf">Preprint</a> / <a
+                                href="./projects/stereo/cvpr2014-stereo-poster.pdf">Poster</a> / <a
+                                href="./projects/stereo#conference">Project</a></p>
+                    </div>
+                </li>
 
-<li class="project">
-    <a href="./projects/ddm/" target="_blank"><img src="projects/ddm/icon_bmvc12.png" alt="Image Segmentation using Dual Distribution Matching"></a>
-    <div>
-        <h3><a href="./projects/ddm/" target="_blank">Image Segmentation using Dual Distribution Matching</a></h3>
-        <p><strong>BMVC 2012 Oral</strong></p>
-        <p>Tatsunori Taniai, Viet-Quoc Pham, Keita Takahashi, Takeshi Naemura</p>
-        <p><a href="./projects/ddm/bmvc12.pdf">Preprint</a> / <a href="./projects/ddm/bmvc12_appendix.pdf">Supp</a> / <a href="./projects/ddm/bmvc12_abstract.pdf">ExtAbst</a> / <a href="https://docs.com/tatsunori-taniai/7577/image-segmentation-using-dual-distribution" target="_blank">Slides</a> / <a href="http://videolectures.net/bmvc2012_taniai_distribution_matching/" target="_blank">VideoLecuture</a> / <a href="./projects/ddm/">Project</a></p>
-    </div>
-</li>
+                <li class="project">
+                    <a href="./projects/ddm/" target="_blank"><img src="projects/ddm/icon_bmvc12.png"
+                            alt="Image Segmentation using Dual Distribution Matching"></a>
+                    <div>
+                        <h3><a href="./projects/ddm/" target="_blank">Image Segmentation using Dual Distribution
+                                Matching</a></h3>
+                        <p><strong>BMVC 2012 Oral</strong></p>
+                        <p>Tatsunori Taniai, Viet-Quoc Pham, Keita Takahashi, Takeshi Naemura</p>
+                        <p><a href="./projects/ddm/bmvc12.pdf">Preprint</a> / <a
+                                href="./projects/ddm/bmvc12_appendix.pdf">Supp</a> / <a
+                                href="./projects/ddm/bmvc12_abstract.pdf">ExtAbst</a> / <a
+                                href="https://docs.com/tatsunori-taniai/7577/image-segmentation-using-dual-distribution"
+                                target="_blank">Slides</a> / <a
+                                href="http://videolectures.net/bmvc2012_taniai_distribution_matching/"
+                                target="_blank">VideoLecuture</a> / <a href="./projects/ddm/">Project</a></p>
+                    </div>
+                </li>
 
 
             </ul>
         </section>
 
         <!-- Education, Experience, Awards Section -->
-    <section id="experiences">
-        <h2>Experiences</h2>
-        <h3>Education</h3>
-        <ul>
-            <li>Ph.D. in Information Science and Technology, The University of Tokyo, 2017. Supervised by <a target="_blank" rel="noopener noreferrer" href="http://www.hci.iis.u-tokyo.ac.jp/~ysato/">Prof. Yoichi Sato</a></li>
-            <li>M.Sc. in Information Science and Technology, The University of Tokyo, 2014. Supervised by <a target="_blank" rel="noopener noreferrer" href="https://nae-lab.org/people/naemura/">Prof. Takeshi Naemura</a></li>
-            <li>B.Eng. in Information and Communication Engineering, The University of Tokyo, 2012. Supervised by <a target="_blank" rel="noopener noreferrer" href="https://nae-lab.org/people/naemura/">Prof. Takeshi Naemura</a></li>
-        </ul>
-        <h3>Professional Experience</h3>
-        <ul>
-            <li><strong>Senior Researcher at OMRON SINIC X Corporation</strong>, Tokyo, Japan, 2019 – Present</li>
-            <li><strong>Visiting Researcher at RIKEN AIP Center</strong>, Tokyo, Japan, 2019 – 2020</li>
-            <li><strong>Special Postdoctoral Researcher at RIKEN AIP Center</strong>, Tokyo, Japan, 2017 – 2019</li>
-            <li><strong>Research Assistant at RIKEN AIP Center</strong>, Tokyo, Japan, 2017</li>
-            <li><strong>JSPS Young Research Fellow at The University of Tokyo</strong>, Tokyo, Japan, 2014 – 2017</li>
-        </ul>
-        <h3>Internships</h3>
-        <ul>
-            <li><strong>Research Intern at Microsoft Research</strong>, Redmond, USA, May – Aug. 2016. Supervised by <a target="_blank" rel="noopener noreferrer" href="https://snsinha.github.io/">Dr. Sudipta Sinha</a>. Published a <a href="../projects/cvpr17_fsf/">CVPR 2017 paper</a>.</li>
-            <li><strong>Visiting Researcher at Microsoft Research Asia</strong>, Beijing, China, Jan. – Apr. 2016. Supervised by <a target="_blank" rel="noopener noreferrer" href="http://www.davidwipf.com/">Dr. David Wipf</a></li>
-            <li><strong>Research Intern at Microsoft Research</strong>, Redmond, USA, May – Aug. 2016. Supervised by <a target="_blank" rel="noopener noreferrer" href="https://snsinha.github.io/">Dr. Sudipta Sinha</a>. Published a <a href="./projects/cvpr16_dccs/">CVPR 2016 paper</a>.</li>
-            <li><strong>Research Intern at Microsoft Research</strong>, Redmond, USA, May – Aug. 2016. Supervised by <a target="_blank" rel="noopener noreferrer" href="https://scholar.google.co.jp/citations?user=eomC7sIAAAAJ&amp;hl=ja">Dr. Yasuyuki Matsushita</a>. Published a <a href="./projects/stereo/">CVPR 2014 paper</a>.</li>
-        </ul>
-        <h3>Service</h3>
-        <ul>
-            <li><strong>Conference Reviewer</strong>: ECCV '20, CVPR '24, '23, '22, '20, '18, ICCV '23, '19, '17, 3DV '18, '14</li>
-            <li><strong>Journal Reviewer</strong>: TPAMI '23, '19, '18, IJCV '18, CVIU '17, IMAVIS '16, IEEE TIP '18, '15.</li>
-            <li>A member of the Organizing Committee for the SSII 2025 Tutorial and Technical Talk Sessions.</li>
-        </ul>
+        <section id="experiences">
+            <h2>Experiences</h2>
+            <h3>Education</h3>
+            <ul>
+                <li>Ph.D. in Information Science and Technology, The University of Tokyo, 2017. Supervised by <a
+                        target="_blank" rel="noopener noreferrer" href="http://www.hci.iis.u-tokyo.ac.jp/~ysato/">Prof.
+                        Yoichi Sato</a></li>
+                <li>M.Sc. in Information Science and Technology, The University of Tokyo, 2014. Supervised by <a
+                        target="_blank" rel="noopener noreferrer" href="https://nae-lab.org/people/naemura/">Prof.
+                        Takeshi Naemura</a></li>
+                <li>B.Eng. in Information and Communication Engineering, The University of Tokyo, 2012. Supervised by <a
+                        target="_blank" rel="noopener noreferrer" href="https://nae-lab.org/people/naemura/">Prof.
+                        Takeshi Naemura</a></li>
+            </ul>
+            <h3>Professional Experience</h3>
+            <ul>
+                <li><strong>Senior Researcher at OMRON SINIC X Corporation</strong>, Tokyo, Japan, 2019 – Present</li>
+                <li><strong>Visiting Researcher at RIKEN AIP Center</strong>, Tokyo, Japan, 2019 – 2020</li>
+                <li><strong>Special Postdoctoral Researcher at RIKEN AIP Center</strong>, Tokyo, Japan, 2017 – 2019</li>
+                <li><strong>Research Assistant at RIKEN AIP Center</strong>, Tokyo, Japan, 2017</li>
+                <li><strong>JSPS Young Research Fellow at The University of Tokyo</strong>, Tokyo, Japan, 2014 – 2017
+                </li>
+            </ul>
+            <h3>Internships</h3>
+            <ul>
+                <li><strong>Research Intern at Microsoft Research</strong>, Redmond, USA, May – Aug. 2016. Supervised by
+                    <a target="_blank" rel="noopener noreferrer" href="https://snsinha.github.io/">Dr. Sudipta
+                        Sinha</a>. Published a <a href="../projects/cvpr17_fsf/">CVPR 2017 paper</a>.</li>
+                <li><strong>Visiting Researcher at Microsoft Research Asia</strong>, Beijing, China, Jan. – Apr. 2016.
+                    Supervised by <a target="_blank" rel="noopener noreferrer" href="http://www.davidwipf.com/">Dr.
+                        David Wipf</a></li>
+                <li><strong>Research Intern at Microsoft Research</strong>, Redmond, USA, May – Aug. 2016. Supervised by
+                    <a target="_blank" rel="noopener noreferrer" href="https://snsinha.github.io/">Dr. Sudipta
+                        Sinha</a>. Published a <a href="./projects/cvpr16_dccs/">CVPR 2016 paper</a>.</li>
+                <li><strong>Research Intern at Microsoft Research</strong>, Redmond, USA, May – Aug. 2016. Supervised by
+                    <a target="_blank" rel="noopener noreferrer"
+                        href="https://scholar.google.co.jp/citations?user=eomC7sIAAAAJ&amp;hl=ja">Dr. Yasuyuki
+                        Matsushita</a>. Published a <a href="./projects/stereo/">CVPR 2014 paper</a>.</li>
+            </ul>
+            <h3>Service</h3>
+            <ul>
+                <li><strong>Conference Reviewer</strong>: ECCV '20, CVPR '24, '23, '22, '20, '18, ICCV '23, '19, '17,
+                    3DV '18, '14</li>
+                <li><strong>Journal Reviewer</strong>: TPAMI '23, '19, '18, IJCV '18, CVIU '17, IMAVIS '16, IEEE TIP
+                    '18, '15.</li>
+                <li>A member of the Organizing Committee for the SSII 2025 Tutorial and Technical Talk Sessions.</li>
+            </ul>
 
-        <h3>Awards</h3>
-        <ul>
-            <li><strong>Outstanding Reviewer Awards</strong> from <a href="./misc/cvpr2023-outstanding-reviewer.pdf">CVPR 2023</a>, <a href="./misc/eccv2020-reviewer-certificate.pdf">ECCV 2020</a>, <a target="_blank" rel="noopener noreferrer" href="https://cvpr2020.thecvf.com/reviewer-acknowledgements">CVPR 2020</a>, <a target="_blank" rel="noopener noreferrer" href="https://cvpr2018.thecvf.com/program/reviewer_acknowledgements">CVPR 2018</a>.</li>
-            <li><strong>IPSJ Yamashita SIG Research Award</strong> from Information Processing Society of Japan, 2018 [<a href="https://www.ipsj.or.jp/award/yamasita2018-detail.html" target="_blank">Link</a>]</li>
-            <li><strong>Dean's Award for Best Doctoral Thesis</strong> from Graduate School of Information Science and Technology, The University of Tokyo, 2017</li>
-            <li><strong>Microsoft Research Asia Fellowship 2015</strong> from Microsoft Research Asia for thirteen PhD students from Asia majoring in CS, 2015 – 2017</li>
-            <li><strong>JASSO Scholarship for Top 10% Excellent Master Students</strong> from Japan Student Services Organization, 2014</li>
-            <li><strong>Dean's Award for Best Master Thesis</strong> from Graduate School of Information Science and Technology, The University of Tokyo, 2017</li>
-            <li><strong>Dean's Award for Best Bachelor Thesis</strong> from Faculty of Engineering, The University of Tokyo, 2012</li>
-        </ul>
-    </section>
+            <h3>Awards</h3>
+            <ul>
+                <li><strong>Outstanding Reviewer Awards</strong> from <a
+                        href="./misc/cvpr2023-outstanding-reviewer.pdf">CVPR 2023</a>, <a
+                        href="./misc/eccv2020-reviewer-certificate.pdf">ECCV 2020</a>, <a target="_blank"
+                        rel="noopener noreferrer" href="https://cvpr2020.thecvf.com/reviewer-acknowledgements">CVPR
+                        2020</a>, <a target="_blank" rel="noopener noreferrer"
+                        href="https://cvpr2018.thecvf.com/program/reviewer_acknowledgements">CVPR 2018</a>.</li>
+                <li><strong>IPSJ Yamashita SIG Research Award</strong> from Information Processing Society of Japan,
+                    2018 [<a href="https://www.ipsj.or.jp/award/yamasita2018-detail.html" target="_blank">Link</a>]</li>
+                <li><strong>Dean's Award for Best Doctoral Thesis</strong> from Graduate School of Information Science
+                    and Technology, The University of Tokyo, 2017</li>
+                <li><strong>Microsoft Research Asia Fellowship 2015</strong> from Microsoft Research Asia for thirteen
+                    PhD students from Asia majoring in CS, 2015 – 2017</li>
+                <li><strong>JASSO Scholarship for Top 10% Excellent Master Students</strong> from Japan Student Services
+                    Organization, 2014</li>
+                <li><strong>Dean's Award for Best Master Thesis</strong> from Graduate School of Information Science and
+                    Technology, The University of Tokyo, 2017</li>
+                <li><strong>Dean's Award for Best Bachelor Thesis</strong> from Faculty of Engineering, The University
+                    of Tokyo, 2012</li>
+            </ul>
+        </section>
 
         <!-- Publications Section -->
         <section id="publications">
             <h2>Publications</h2>
 
-                <h3>Books and Chapters</h3>
-                <ul><li><span class="me">Tatsunori Taniai</span>. 
-                        <strong>Binocular Stereo</strong>. 
-                <em>In Ikeuchi K. (eds) Computer Vision. Springer, Cham, 2020.</em>
-                [<a href="./projects/misc/cvguideline-binocular-stereo-2020.pdf" target="_blank">Preprint</a>]
-                    </li>
-                </ul>
-                <h3>Journal Papers</h3>
-                <ul>
-                    <li>Naoya Chiba, Yuta Suzuki, <span class="me">Tatsunori Taniai</span>, Ryo Igarashi, Kotaro Saito, Yoshitaka Ushiku, Kanta Ono. 
-                        <strong>Neural structure fields with application to crystal structure autoencoders</strong>. 
-                        <em>Communication Materials</em>, 2023.
-                        
-                        [<a href="https://doi.org/10.1038/s43246-023-00432-w" target="_blank">Open Access</a> / <a href="https://github.com/omron-sinicx/neural-structure-field" target="_blank">Code</a>]
-                    </li>
-                    <li>Yuta Suzuki, <span class="me">Tatsunori Taniai</span>, Kotaro Saito, Yoshitaka Ushiku, Kanta Ono. 
-                        <strong>Self-supervised learning of materials concepts from crystal structures via deep neural networks</strong>. 
-                        <em>Machine Learning: Science and Technology</em>, 2022. 
-                        
-                        [<a href="https://iopscience.iop.org/article/10.1088/2632-2153/aca23d/meta" target="_blank">Open Access</a> / <a href="https://github.com/quantumbeam/materials-concept-learning" target="_blank">Code</a>]
-                    </li>
-                    <li><span class="me">Tatsunori Taniai</span>, Yasuyuki Matsushita, Yoichi Sato, Takeshi Naemura. 
-                        <strong>Continuous 3D Label Stereo Matching using Local Expansion Moves</strong>. 
-                        <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em> (<strong>TPAMI 2018</strong>), vol. 40, no. 11, pp. 2725--2739, 2018. 
-                        <!--(<span class="redtext">acceptance rate 30%</span>)-->
-                        
-                        [<a href="http://arxiv.org/abs/1603.08328" target="_blank">Preprint</a> / <a href="./projects/stereo#journal">Project</a> / <a href="https://github.com/t-taniai/LocalExpStereo" target="_blank">Code</a>]
-                    </li>
+            <h3>Books and Chapters</h3>
+            <ul>
+                <li><span class="me">Tatsunori Taniai</span>.
+                    <strong>Binocular Stereo</strong>.
+                    <em>In Ikeuchi K. (eds) Computer Vision. Springer, Cham, 2020.</em>
+                    [<a href="./projects/misc/cvguideline-binocular-stereo-2020.pdf" target="_blank">Preprint</a>]
+                </li>
+            </ul>
+            <h3>Journal Papers</h3>
+            <ul>
+                <li>Naoya Chiba, Yuta Suzuki, <span class="me">Tatsunori Taniai</span>, Ryo Igarashi, Kotaro Saito,
+                    Yoshitaka Ushiku, Kanta Ono.
+                    <strong>Neural structure fields with application to crystal structure autoencoders</strong>.
+                    <em>Communication Materials</em>, 2023.
+
+                    [<a href="https://doi.org/10.1038/s43246-023-00432-w" target="_blank">Open Access</a> / <a
+                        href="https://github.com/omron-sinicx/neural-structure-field" target="_blank">Code</a>]
+                </li>
+                <li>Yuta Suzuki, <span class="me">Tatsunori Taniai</span>, Kotaro Saito, Yoshitaka Ushiku, Kanta Ono.
+                    <strong>Self-supervised learning of materials concepts from crystal structures via deep neural
+                        networks</strong>.
+                    <em>Machine Learning: Science and Technology</em>, 2022.
+
+                    [<a href="https://iopscience.iop.org/article/10.1088/2632-2153/aca23d/meta" target="_blank">Open
+                        Access</a> / <a href="https://github.com/quantumbeam/materials-concept-learning"
+                        target="_blank">Code</a>]
+                </li>
+                <li><span class="me">Tatsunori Taniai</span>, Yasuyuki Matsushita, Yoichi Sato, Takeshi Naemura.
+                    <strong>Continuous 3D Label Stereo Matching using Local Expansion Moves</strong>.
+                    <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em> (<strong>TPAMI
+                        2018</strong>), vol. 40, no. 11, pp. 2725--2739, 2018.
+                    <!--(<span class="redtext">acceptance rate 30%</span>)-->
+
+                    [<a href="http://arxiv.org/abs/1603.08328" target="_blank">Preprint</a> / <a
+                        href="./projects/stereo#journal">Project</a> / <a
+                        href="https://github.com/t-taniai/LocalExpStereo" target="_blank">Code</a>]
+                </li>
                 <li>
-                <span class="me">谷合竜典</span>, ファン・ヴェト・クォク, 高橋桂太, 苗村健. 
-                    <strong>前景・背景色分布の同時マッチングによる画像セグメンテーション</strong>. 
-                <em>電子情報通信学会和文論文誌D, 画像の認識・理解特集号</em>, vol. J96-D, no. 8, pp. 1764--1777, 2013. 
-                (<span class="redtext">an extended version of our BMVC 2012's paper</span>)
-                </span></li>
-                </ul>
-                <h3>International Conference Papers</h3>
-                <ul>
-                <li><span class="me">Tatsunori Taniai</span>, Ryo Igarashi, Yuta Suzuki, Naoya Chiba, Kotaro Saito, Yoshitaka Ushiku, Kanta Ono. 
-                    <strong>Crystalformer: Infinitely Connected Attention for Periodic Structure Encoding</strong>. 
-                    In <em>Proceedings of The Twelfth International Conference on Learning Representations</em> (<strong>ICLR 2024</strong>), Vienna, Austria, 2024. (<span class="redtext">acceptance rate 31%</span>)
-                    [<a target="_blank" href="projects/iclr24_crystalformer/iclr24_paper.pdf">Preprint</a> / <a target="_blank" href="https://omron-sinicx.github.io/crystalformer/">Project</a> / <a href="https://github.com/omron-sinicx/crystalformer" target="_blank">Code</a>]
+                    <span class="me">谷合竜典</span>, ファン・ヴェト・クォク, 高橋桂太, 苗村健.
+                    <strong>前景・背景色分布の同時マッチングによる画像セグメンテーション</strong>.
+                    <em>電子情報通信学会和文論文誌D, 画像の認識・理解特集号</em>, vol. J96-D, no. 8, pp. 1764--1777, 2013.
+                    (<span class="redtext">an extended version of our BMVC 2012's paper</span>)
+                    </span>
+                </li>
+            </ul>
+            <h3>International Conference Papers</h3>
+            <ul>
+                <li><span class="me">Tatsunori Taniai</span>, Ryo Igarashi, Yuta Suzuki, Naoya Chiba, Kotaro Saito,
+                    Yoshitaka Ushiku, Kanta Ono.
+                    <strong>Crystalformer: Infinitely Connected Attention for Periodic Structure Encoding</strong>.
+                    In <em>Proceedings of The Twelfth International Conference on Learning Representations</em>
+                    (<strong>ICLR 2024</strong>), Vienna, Austria, 2024. (<span class="redtext">acceptance rate
+                        31%</span>)
+                    [<a target="_blank" href="projects/iclr24_crystalformer/iclr24_paper.pdf">Preprint</a> / <a
+                        target="_blank" href="https://omron-sinicx.github.io/crystalformer/">Project</a> / <a
+                        href="https://github.com/omron-sinicx/crystalformer" target="_blank">Code</a>]
                 </li>
                 <li>Masafumi Endo, <span class="me">Tatsunori Taniai</span>, Ryo Yonetani, Genya Ishigami.
-                    <strong>Risk-aware Path Planning via Probabilistic Fusion of Traversability Prediction for Planetary Rovers on Heterogeneous Terrains</strong>. 
-                    In <em>Proceedings of the 2023 IEEE International Conference on Robotics and Automation</em> (<strong>IROS 2023</strong>), pp. 11852--11858, London, UK, 2023.
-                    [<a target="_blank" href="projects/safe-rover-navi/icra23-paper-copyright.pdf">Preprint</a> / <a target="_blank" href="https://omron-sinicx.github.io/safe-rover-navi/">Project</a> / <a href="https://github.com/omron-sinicx/safe-rover-navi" target="_blank">Code</a>]
-                </li>		
-                <li>Sotaro Katayama, <span class="me">Tatsunori Taniai</span>, Kazutoshi Tanaka.
-                    <strong>Quasistatic contact-rich manipulation via linear complementarity quadratic programming</strong>. 
-                    In <em>Proceedings of the 2022 IEEE/RSJ International Conference on Intelligent Robots and Systems</em> (<strong>IROS 2022</strong>), pp. 203–-210, Kyoto, Japan, 2022.
-                    [<a target="_blank" href="projects/lcqp/IROS2022_LCQP_final.pdf">Preprint</a> / <a href="https://omron-sinicx.github.io/lcqp/">Project</a> / <a href="https://github.com/omron-sinicx/lcqp" target="_blank">Code</a>]
+                    <strong>Risk-aware Path Planning via Probabilistic Fusion of Traversability Prediction for Planetary
+                        Rovers on Heterogeneous Terrains</strong>.
+                    In <em>Proceedings of the 2023 IEEE International Conference on Robotics and Automation</em>
+                    (<strong>IROS 2023</strong>), pp. 11852--11858, London, UK, 2023.
+                    [<a target="_blank" href="projects/safe-rover-navi/icra23-paper-copyright.pdf">Preprint</a> / <a
+                        target="_blank" href="https://omron-sinicx.github.io/safe-rover-navi/">Project</a> / <a
+                        href="https://github.com/omron-sinicx/safe-rover-navi" target="_blank">Code</a>]
                 </li>
-                <li>Ryo Yonetani*, <span class="me">Tatsunori Taniai</span>*, Mohammadamin Barekatain, Mai Nishimura, Asako Kanezaki.
-                    <strong>Path Planning using Neural A* Search</strong>. 
-                    In <em>Proceedings of the International Conference on Machine Learning</em> (<strong>ICML 2021</strong>), a virtual conference, 2021.
+                <li>Sotaro Katayama, <span class="me">Tatsunori Taniai</span>, Kazutoshi Tanaka.
+                    <strong>Quasistatic contact-rich manipulation via linear complementarity quadratic
+                        programming</strong>.
+                    In <em>Proceedings of the 2022 IEEE/RSJ International Conference on Intelligent Robots and
+                        Systems</em> (<strong>IROS 2022</strong>), pp. 203–-210, Kyoto, Japan, 2022.
+                    [<a target="_blank" href="projects/lcqp/IROS2022_LCQP_final.pdf">Preprint</a> / <a
+                        href="https://omron-sinicx.github.io/lcqp/">Project</a> / <a
+                        href="https://github.com/omron-sinicx/lcqp" target="_blank">Code</a>]
+                </li>
+                <li>Ryo Yonetani*, <span class="me">Tatsunori Taniai</span>*, Mohammadamin Barekatain, Mai Nishimura,
+                    Asako Kanezaki.
+                    <strong>Path Planning using Neural A* Search</strong>.
+                    In <em>Proceedings of the International Conference on Machine Learning</em> (<strong>ICML
+                        2021</strong>), a virtual conference, 2021.
                     (<span class="redtext">acceptance rate 21%</span>)
-                    [<a target="_blank" href="https://arxiv.org/abs/2009.07476">Preprint</a> / <a href="https://omron-sinicx.github.io/neural-astar/">Project</a> / <a href="https://github.com/omron-sinicx/neural-astar" target="_blank">Code</a>]
+                    [<a target="_blank" href="https://arxiv.org/abs/2009.07476">Preprint</a> / <a
+                        href="https://omron-sinicx.github.io/neural-astar/">Project</a> / <a
+                        href="https://github.com/omron-sinicx/neural-astar" target="_blank">Code</a>]
                 </li>
                 <li><span class="me">Tatsunori Taniai</span>, Takanori Maehara.
-                    <strong>Neural Inverse Rendering for General Reflectance Photometric Stereo</strong>. 
-                    In <em>Proceedings of the International Conference on Machine Learning</em> (<strong>ICML 2018</strong>), pp. 4864--4873, Stockholm, Sweden, 2018.
-                    (<span class="redtext">acceptance rate 25%</span>) 
-                    [<a href="./projects/tm18_neuralps/icml18-neuralps.pdf">Preprint</a> / <a href="./projects/tm18_neuralps/">Project</a> / <a href="https://github.com/t-taniai/neuralps" target="_blank">Code</a>]
+                    <strong>Neural Inverse Rendering for General Reflectance Photometric Stereo</strong>.
+                    In <em>Proceedings of the International Conference on Machine Learning</em> (<strong>ICML
+                        2018</strong>), pp. 4864--4873, Stockholm, Sweden, 2018.
+                    (<span class="redtext">acceptance rate 25%</span>)
+                    [<a href="./projects/tm18_neuralps/icml18-neuralps.pdf">Preprint</a> / <a
+                        href="./projects/tm18_neuralps/">Project</a> / <a href="https://github.com/t-taniai/neuralps"
+                        target="_blank">Code</a>]
                 </li>
                 <li>Daniel Scharstein, <span class="me">Tatsunori Taniai</span>, Sudipta N. Sinha.
-                    <strong>Semi-Global Stereo Matching with Surface Orientation Priors</strong>. 
-                    In <em>Proceedings of the 5th International Conference on 3D Vision</em> (<strong>3DV 2017 Spotlight</strong>), pp. 215--224, Qingdao, China, 2017. 
+                    <strong>Semi-Global Stereo Matching with Surface Orientation Priors</strong>.
+                    In <em>Proceedings of the 5th International Conference on 3D Vision</em> (<strong>3DV 2017
+                        Spotlight</strong>), pp. 215--224, Qingdao, China, 2017.
                     <!--(<span class="redtext">acceptance rate 30%</span>)-->
-                    [<a href="./projects/3dv17_sgmp/sgmp-3dv-2017.pdf">Preprint (extended)</a> / <a href="./projects/3dv17_sgmp/3DV2017_poster_final.pdf">Poster</a> / <a href="./projects/3dv17_sgmp/3DV2017_spotlight_fina.pptx">Slides</a>]
+                    [<a href="./projects/3dv17_sgmp/sgmp-3dv-2017.pdf">Preprint (extended)</a> / <a
+                        href="./projects/3dv17_sgmp/3DV2017_poster_final.pdf">Poster</a> / <a
+                        href="./projects/3dv17_sgmp/3DV2017_spotlight_fina.pptx">Slides</a>]
                 </li>
                 <li><span class="me">Tatsunori Taniai</span>, Sudipta N. Sinha, Yoichi Sato.
-                    <strong>Fast Multi-frame Stereo Scene Flow with Motion Segmentation</strong>. 
-                    In <em>Proceedings of IEEE Conference on Computer Vision and Pattern Recognition</em> (<strong>CVPR 2017</strong>), pp. 6891--6900, Honolulu, Hawaii, USA, 2017. 
+                    <strong>Fast Multi-frame Stereo Scene Flow with Motion Segmentation</strong>.
+                    In <em>Proceedings of IEEE Conference on Computer Vision and Pattern Recognition</em> (<strong>CVPR
+                        2017</strong>), pp. 6891--6900, Honolulu, Hawaii, USA, 2017.
                     (<span class="redtext">acceptance rate 30%</span>)
-                    [<a href="./projects/cvpr17_fsf/cvpr2017-sceneflow-final.pdf">Preprint</a> / <a href="./projects/cvpr17_fsf/cvpr2017-sceneflow-final-long.pdf">Preprint (extended)</a> / <a href="./projects/cvpr17_fsf/cvpr17-poster-v3_fixed.pdf">Poster</a> / <a href="./projects/cvpr16_dccs">Project</a>]
+                    [<a href="./projects/cvpr17_fsf/cvpr2017-sceneflow-final.pdf">Preprint</a> / <a
+                        href="./projects/cvpr17_fsf/cvpr2017-sceneflow-final-long.pdf">Preprint (extended)</a> / <a
+                        href="./projects/cvpr17_fsf/cvpr17-poster-v3_fixed.pdf">Poster</a> / <a
+                        href="./projects/cvpr16_dccs">Project</a>]
                 </li>
                 <li><span class="me">Tatsunori Taniai</span>, Sudipta N. Sinha, Yoichi Sato.
-                    <strong>Joint Recovery of Dense Correspondence and Cosegmentation in Two Images</strong>. 
-                    In <em>Proceedings of IEEE Conference on Computer Vision and Pattern Recognition</em> 
-                    (<strong>CVPR 2016</strong>), pp. 4246--4255, Las Vegas, NV, USA, 2016. (<span class="redtext">acceptance rate 30%</span>)
-                    [<a href="./projects/cvpr16_dccs/cvpr2016-dccs-final.pdf">Preprint</a> / <a href="./projects/cvpr16_dccs/cvpr2016-dccs-final-long.pdf">Preprint (extended)</a> / <a href="./projects/cvpr16_dccs/cvpr16-poster-final.pdf">Poster</a> / <a href="./projects/cvpr16_dccs">Project</a>]
+                    <strong>Joint Recovery of Dense Correspondence and Cosegmentation in Two Images</strong>.
+                    In <em>Proceedings of IEEE Conference on Computer Vision and Pattern Recognition</em>
+                    (<strong>CVPR 2016</strong>), pp. 4246--4255, Las Vegas, NV, USA, 2016. (<span
+                        class="redtext">acceptance rate 30%</span>)
+                    [<a href="./projects/cvpr16_dccs/cvpr2016-dccs-final.pdf">Preprint</a> / <a
+                        href="./projects/cvpr16_dccs/cvpr2016-dccs-final-long.pdf">Preprint (extended)</a> / <a
+                        href="./projects/cvpr16_dccs/cvpr16-poster-final.pdf">Poster</a> / <a
+                        href="./projects/cvpr16_dccs">Project</a>]
                 </li>
                 <li><span class="me">Tatsunori Taniai</span>, Yasuyuki Matsushita, Takeshi Naemura.
-                    <strong>Superdifferential Cuts for Binary Energies</strong>. 
-                    In <em>Proceedings of IEEE Conference on Computer Vision and Pattern Recognition</em> (<strong>CVPR 2015</strong>), pp. 2030--2038, Boston, MA, USA, 2015.
+                    <strong>Superdifferential Cuts for Binary Energies</strong>.
+                    In <em>Proceedings of IEEE Conference on Computer Vision and Pattern Recognition</em> (<strong>CVPR
+                        2015</strong>), pp. 2030--2038, Boston, MA, USA, 2015.
                     (<span class="redtext">acceptance rate 28%</span>)
-                    [<a href="./projects/cvpr15_sdc/cvpr2015-seg-final.pdf">Preprint</a> / <a href="./projects/cvpr15_sdc/cvpr2015-seg-abstract.pdf">ExtAbst</a> / <a href="./projects/cvpr15_sdc">Project</a>]
+                    [<a href="./projects/cvpr15_sdc/cvpr2015-seg-final.pdf">Preprint</a> / <a
+                        href="./projects/cvpr15_sdc/cvpr2015-seg-abstract.pdf">ExtAbst</a> / <a
+                        href="./projects/cvpr15_sdc">Project</a>]
                 </li>
-                <li><span class="me">Tatsunori Taniai</span>, Yasuyuki Matsushita, Takeshi Naemura. 
-                    <strong>Graph Cut based Continuous Stereo Matching using Locally Shared Labels</strong>. 
-                    In <em>Proceedings of IEEE Conference on Computer Vision and Pattern Recognition</em> (<strong>CVPR 2014</strong>), pp. 1613--1620, Columbus, OH, USA, 2014.
+                <li><span class="me">Tatsunori Taniai</span>, Yasuyuki Matsushita, Takeshi Naemura.
+                    <strong>Graph Cut based Continuous Stereo Matching using Locally Shared Labels</strong>.
+                    In <em>Proceedings of IEEE Conference on Computer Vision and Pattern Recognition</em> (<strong>CVPR
+                        2014</strong>), pp. 1613--1620, Columbus, OH, USA, 2014.
                     (<span class="redtext">acceptance rate 30%</span>)
-                    [<a href="./projects/stereo/cvpr2014-stereo_final.pdf">Preprint</a> / <a href="./projects/stereo/cvpr2014-stereo-poster.pdf">Poster</a> / <a href="./projects/stereo">Project</a> / <a href="https://github.com/t-taniai/LocalExpStereo" target="_blank">Code</a>]
+                    [<a href="./projects/stereo/cvpr2014-stereo_final.pdf">Preprint</a> / <a
+                        href="./projects/stereo/cvpr2014-stereo-poster.pdf">Poster</a> / <a
+                        href="./projects/stereo">Project</a> / <a href="https://github.com/t-taniai/LocalExpStereo"
+                        target="_blank">Code</a>]
                 </li>
-                <li><span class="me">Tatsunori Taniai</span>, Viet-Quoc Pham, Keita Takahashi, Takeshi Naemura. 
-                    <strong>Image Segmentation using Dual Distribution Matching</strong>. 
-                    In <em>Proceedings of the 23rd British Machine Vision Conference</em> (<strong>BMVC 2012</strong>), pp. 74.1--74.11, Surrey, UK, 2012.
+                <li><span class="me">Tatsunori Taniai</span>, Viet-Quoc Pham, Keita Takahashi, Takeshi Naemura.
+                    <strong>Image Segmentation using Dual Distribution Matching</strong>.
+                    In <em>Proceedings of the 23rd British Machine Vision Conference</em> (<strong>BMVC 2012</strong>),
+                    pp. 74.1--74.11, Surrey, UK, 2012.
                     (<span class="redtext">oral presentation; acceptance rate 8%</span>)
-                    [<a href="./projects/ddm/bmvc12.pdf">Preprint</a> / <a href="./projects/ddm/bmvc12_appendix.pdf">Supp</a> / <a href="./projects/ddm/bmvc12_abstract.pdf">ExtAbst</a> / <a href="https://docs.com/tatsunori-taniai/7577/image-segmentation-using-dual-distribution" target="_blank">Slides</a> / <a href="http://videolectures.net/bmvc2012_taniai_distribution_matching/" target="_blank">VideoLecuture</a> / <a href="./projects/ddm/">Project</a>]
+                    [<a href="./projects/ddm/bmvc12.pdf">Preprint</a> / <a
+                        href="./projects/ddm/bmvc12_appendix.pdf">Supp</a> / <a
+                        href="./projects/ddm/bmvc12_abstract.pdf">ExtAbst</a> / <a
+                        href="https://docs.com/tatsunori-taniai/7577/image-segmentation-using-dual-distribution"
+                        target="_blank">Slides</a> / <a
+                        href="http://videolectures.net/bmvc2012_taniai_distribution_matching/"
+                        target="_blank">VideoLecuture</a> / <a href="./projects/ddm/">Project</a>]
                 </li>
-</ul>
-<h3>Invited Talks</h3>
-<ul>
-<li>
-<span class="me">Tatsunori Taniai</span>, Sudipta N. Sinha, Yoichi Sato. <strong>Fast Multi-frame Stereo Scene Flow with Motion Segmentation (CVPR 2017)</strong>. 
-
-<em>The 20th Meeting on Image Recognition and Understanding</em> (MIRU 2017), Hiroshima, Japan, August 10th, 2017.
-</li>
-    <li>
-<span class="me">Tatsunori Taniai</span>. <strong>Joint Recovery of Dense Correspondence and Cosegmentation in Two Images</strong>. 
-
-<em>The Workshop on Vision, Learning, and Cognition in Microsoft Research Asia Ph.D. Forum 2016</em>, Microsoft office, Beijing, China, September 20th, 2016.</li>
-    <li>
-<span class="me">Tatsunori Taniai</span>, Sudipta N. Sinha, Yoichi Sato. <strong>Joint Recovery of Dense Correspondence and Cosegmentation in Two Images (CVPR 2016)</strong>. 
-
-    <em>The 19th Meeting on Image Recognition and Understanding</em> (MIRU 2016), IS2-15, Shizuoka, Japan, August 4th, 2016.
-</li>
+            </ul>
+            <h3>Invited Talks</h3>
+            <ul>
                 <li>
-    <span class="me">Tatsunori Taniai</span>. 
-    <strong>
-        Solving Segmentation and Dense Correspondence Problems using Graph Cuts (画像領域・対応点推定問題へのグラフカットの適用)</strong>. 
+                    <span class="me">Tatsunori Taniai</span>, Sudipta N. Sinha, Yoichi Sato. <strong>Fast Multi-frame
+                        Stereo Scene Flow with Motion Segmentation (CVPR 2017)</strong>.
 
-    <em>
-        The 1st CREST
-        Symposium on Random Fields and Deep Learning
-    </em>, Waseda Univ., Tokyo, Japan, January 13th, 2016. (Organizers: Prof. Hiroshi Ishikawa &amp; Prof. Takayuki Okatani)
-    [<a href="https://docs.com/tatsunori-taniai/2582/solving-segmentation-and-dense-correspondence" target="_blank">Slides</a>]
-</li>
+                    <em>The 20th Meeting on Image Recognition and Understanding</em> (MIRU 2017), Hiroshima, Japan,
+                    August 10th, 2017.
+                </li>
                 <li>
-    <span class="me">Tatsunori Taniai</span>, Yasuyuki Matsushita, Takeshi Naemura. <strong>Superdifferential Cuts for Binary Energies (CVPR 2015)</strong>. 
+                    <span class="me">Tatsunori Taniai</span>. <strong>Joint Recovery of Dense Correspondence and
+                        Cosegmentation in Two Images</strong>.
 
-    <em>The 18th Meeting on Image Recognition and Understanding</em> (MIRU 2015), IS1-10, Osaka, Japan, July 28th, 2015.
-</li>
+                    <em>The Workshop on Vision, Learning, and Cognition in Microsoft Research Asia Ph.D. Forum
+                        2016</em>, Microsoft office, Beijing, China, September 20th, 2016.
+                </li>
                 <li>
-    <span class="me">Tatsunori Taniai</span>, Yasuyuki Matsushita, Takeshi Naemura. <strong>Graph Cut based Continuous Stereo Matching using Locally Shared Labels (CVPR 2014)</strong>. 
+                    <span class="me">Tatsunori Taniai</span>, Sudipta N. Sinha, Yoichi Sato. <strong>Joint Recovery of
+                        Dense Correspondence and Cosegmentation in Two Images (CVPR 2016)</strong>.
 
-    <em>The 17th Meeting on Image Recognition and Understanding</em> (MIRU 2014), IT1-1, Okayama, Japan, July 29th, 2014.
-</li>
-              </ul>
-              <h3>Domestic Conference Papers</h3>
-              <ul>
+                    <em>The 19th Meeting on Image Recognition and Understanding</em> (MIRU 2016), IS2-15, Shizuoka,
+                    Japan, August 4th, 2016.
+                </li>
                 <li>
-                    
-                        <span class="me">谷合竜典</span>, 苗村健. <strong>画素位置を埋め込んだ双色分布マッチングによる画像セグメンテーション</strong>. 
-                        <em>画像の認識・理解シンポジウム （MIRU2013）予稿集</em>, SS3-31, 東京, 2013.
-                    </li>
+                    <span class="me">Tatsunori Taniai</span>.
+                    <strong>
+                        Solving Segmentation and Dense Correspondence Problems using Graph Cuts
+                        (画像領域・対応点推定問題へのグラフカットの適用)</strong>.
+
+                    <em>
+                        The 1st CREST
+                        Symposium on Random Fields and Deep Learning
+                    </em>, Waseda Univ., Tokyo, Japan, January 13th, 2016. (Organizers: Prof. Hiroshi Ishikawa &amp;
+                    Prof. Takayuki Okatani)
+                    [<a href="https://docs.com/tatsunori-taniai/2582/solving-segmentation-and-dense-correspondence"
+                        target="_blank">Slides</a>]
+                </li>
                 <li>
-                    
-                        <span class="me">谷合竜典</span>, ファン・ヴェト・クォク, 高橋桂太, 苗村健. <strong>前景および背景色分布の同時マッチングによる画像セグメンテーション</strong>. 
-                        <em>画像の認識・理解シンポジウム （MIRU2012）予稿集</em>, OS14-02, 福岡, 2012.
-                    </li>
-              </ul>
-              <!--
+                    <span class="me">Tatsunori Taniai</span>, Yasuyuki Matsushita, Takeshi Naemura.
+                    <strong>Superdifferential Cuts for Binary Energies (CVPR 2015)</strong>.
+
+                    <em>The 18th Meeting on Image Recognition and Understanding</em> (MIRU 2015), IS1-10, Osaka, Japan,
+                    July 28th, 2015.
+                </li>
+                <li>
+                    <span class="me">Tatsunori Taniai</span>, Yasuyuki Matsushita, Takeshi Naemura. <strong>Graph Cut
+                        based Continuous Stereo Matching using Locally Shared Labels (CVPR 2014)</strong>.
+
+                    <em>The 17th Meeting on Image Recognition and Understanding</em> (MIRU 2014), IT1-1, Okayama, Japan,
+                    July 29th, 2014.
+                </li>
+            </ul>
+            <h3>Domestic Conference Papers</h3>
+            <ul>
+                <li>
+
+                    <span class="me">谷合竜典</span>, 苗村健. <strong>画素位置を埋め込んだ双色分布マッチングによる画像セグメンテーション</strong>.
+                    <em>画像の認識・理解シンポジウム （MIRU2013）予稿集</em>, SS3-31, 東京, 2013.
+                </li>
+                <li>
+
+                    <span class="me">谷合竜典</span>, ファン・ヴェト・クォク, 高橋桂太, 苗村健.
+                    <strong>前景および背景色分布の同時マッチングによる画像セグメンテーション</strong>.
+                    <em>画像の認識・理解シンポジウム （MIRU2012）予稿集</em>, OS14-02, 福岡, 2012.
+                </li>
+            </ul>
+            <!--
               <h3>Technical Reports</h3>
               <ul>
                 <li>
@@ -616,26 +869,30 @@
     [<a href="https://arxiv.org/abs/1802.10328" target="_blank">Preprint</a>]
                     </li>
               </ul> -->
-              
-              <h3>Thesis</h3>
-              <ul>
-                <li><span class="me">Tatsunori Taniai</span>. 
-    <strong>Discrete Inference Approaches to Image Segmentation and Dense Correspondence</strong>. 
-    Doctoral Thesis. March 2017. The University of Tokyo. Adviser: Yoichi Sato.
-    [<a href="https://repository.dl.itc.u-tokyo.ac.jp/?action=repository_uri&item_id=51076&file_id=14&file_no=1">PDF</a> / <a href="https://doi.org/10.15083/00076197" target="_blank">UT-Repo</a>]
-</li>
-                <li><span class="me">Tatsunori Taniai</span>. 
-    <strong>Applying Graph Cuts to MAP Estimation of Continuous and Higher-Order Markov Random Fields</strong>. 
-    Master's Thesis. March 2014. The University of Tokyo. Adviser: Takeshi Naemura.
-    [<a href="./theses/MasterThesis.pdf">PDF</a>]
-</li>
-                <li><span class="me">Tatsunori Taniai</span>. 
-    <strong>前景・背景の大域的な色分布の同時マッチングによる画像セグメンテーション</strong><strong>(Foreground  Background Image Segmentation using Dual Distribution Matching)</strong>. 
-    Bachelor's Thesis. March 2012. The University of Tokyo. Adviser: Takeshi Naemura.
-    [<a href="./theses/BachelorThesis.pdf">PDF</a> / <a href="./theses/NoteBT.txt">Note</a>]
+
+            <h3>Thesis</h3>
+            <ul>
+                <li><span class="me">Tatsunori Taniai</span>.
+                    <strong>Discrete Inference Approaches to Image Segmentation and Dense Correspondence</strong>.
+                    Doctoral Thesis. March 2017. The University of Tokyo. Adviser: Yoichi Sato.
+                    [<a
+                        href="https://repository.dl.itc.u-tokyo.ac.jp/?action=repository_uri&item_id=51076&file_id=14&file_no=1">PDF</a>
+                    / <a href="https://doi.org/10.15083/00076197" target="_blank">UT-Repo</a>]
+                </li>
+                <li><span class="me">Tatsunori Taniai</span>.
+                    <strong>Applying Graph Cuts to MAP Estimation of Continuous and Higher-Order Markov Random
+                        Fields</strong>.
+                    Master's Thesis. March 2014. The University of Tokyo. Adviser: Takeshi Naemura.
+                    [<a href="./theses/MasterThesis.pdf">PDF</a>]
+                </li>
+                <li><span class="me">Tatsunori Taniai</span>.
+                    <strong>前景・背景の大域的な色分布の同時マッチングによる画像セグメンテーション</strong><strong>(Foreground Background Image
+                        Segmentation using Dual Distribution Matching)</strong>.
+                    Bachelor's Thesis. March 2012. The University of Tokyo. Adviser: Takeshi Naemura.
+                    [<a href="./theses/BachelorThesis.pdf">PDF</a> / <a href="./theses/NoteBT.txt">Note</a>]
 
                 </li>
-              </ul>
+            </ul>
         </section>
     </main>
 
@@ -644,21 +901,22 @@
     </footer>
 
     <script>
-    // メニュークリックでスムーズスクロール
-    document.querySelectorAll('nav .menu a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-            const headerHeight = document.querySelector('header').offsetHeight;
+        // メニュークリックでスムーズスクロール
+        document.querySelectorAll('nav .menu a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                const headerHeight = document.querySelector('header').offsetHeight;
 
-            window.scrollTo({
-                top: targetElement.offsetTop - headerHeight, // ヘッダーの高さを引く
-                behavior: 'smooth'
+                window.scrollTo({
+                    top: targetElement.offsetTop - headerHeight, // ヘッダーの高さを引く
+                    behavior: 'smooth'
+                });
             });
         });
-    });
     </script>
 
 </body>
+
 </html>
