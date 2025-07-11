@@ -205,7 +205,6 @@
             height: auto;
             border-radius: 50%;
         }
-
         #about p {
             margin-top: 1.5ex;
             margin-bottom: 1.5ex;
@@ -337,7 +336,22 @@
                 </div>
             </div>
             <div class="about-photo">
-                <img src="./myphoto.jpg" alt="Tatsunori Taniai">
+                <img id="profile-img" src="./images/photo2025.jpg" alt="Tatsunori Taniai">
+                
+                <script>
+                    const images = [
+                    "./images/photo2025.jpg",
+                    "./images/photo2025.png",
+                    ];
+
+                    let currentIndex = 0;
+                    const imgElement = document.getElementById("profile-img");
+
+                    setInterval(() => {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    imgElement.src = images[currentIndex];
+                    }, 10000); // 3秒ごとに切り替え
+                </script>
             </div>
 
         </section>
