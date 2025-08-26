@@ -308,8 +308,9 @@
             <div class="menu">
                 <a href="#about">About</a>
                 <a href="#research">Projects</a>
-                <a href="#experiences">Experiences</a>
+                <a href="#history">History</a>
                 <a href="#publications">Publications</a>
+                <a href="jp_contents.html">JP</a>
             </div>
         </nav>
     </header>
@@ -593,8 +594,8 @@
         </section>
 
         <!-- Education, Experience, Awards Section -->
-        <section id="experiences">
-            <h2>Experiences</h2>
+        <section id="history">
+            <h2>History</h2>
             <h3>Education</h3>
             <ul>
                 <li>Ph.D. in Information Science and Technology, The University of Tokyo, 2017. Supervised by <a
@@ -607,7 +608,7 @@
                         target="_blank" rel="noopener noreferrer" href="https://nae-lab.org/people/naemura/">Prof.
                         Takeshi Naemura</a></li>
             </ul>
-            <h3>Professional Experience</h3>
+            <h3>Professional Career</h3>
             <ul>
                 <li><strong>Senior Researcher at OMRON SINIC X Corporation</strong>, Tokyo, Japan, 2019 – Present</li>
                 <li><strong>Visiting Researcher at RIKEN AIP Center</strong>, Tokyo, Japan, 2019 – 2020</li>
@@ -915,18 +916,29 @@
                 </li>
             </ul>
         </section>
+        
+        <!-- JP Section -->
+        <section id="japanese">
+            <h2>Japanese Content</h2>
+            Go to the <a href="jp_contents.html">Japanese content page</a>.
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Tatsunori Taniai. All rights reserved.</p>
+        <p>&copy; 2025 Tatsunori Taniai. All rights reserved.</p>
     </footer>
 
     <script>
         // メニュークリックでスムーズスクロール
         document.querySelectorAll('nav .menu a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href') || '';
+                if (!href.startsWith('#')) return; // 外部/別ページは通常の動作
+
+                const targetId = href.slice(1);
+                // Initial code started from below
+                // const targetId = this.getAttribute('href').substring(1);
                 e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
                 const targetElement = document.getElementById(targetId);
                 const headerHeight = document.querySelector('header').offsetHeight;
 

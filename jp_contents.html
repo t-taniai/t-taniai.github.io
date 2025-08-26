@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/louisfacun/scholar-icons@master/css/scholar-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- scholar-icons -->
+    <title>谷合 竜典 | 日本語コンテンツまとめ</title>
+    <style>
+        /* リセット */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .external-links,
+        .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .external-links a,
+        .menu a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            /* リンクのテキスト色 */
+        }
+
+        .external-links img {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+        }
+
+        .menu a {
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            color: #007BFF;
+        }
+
+        .menu a:visited {
+            color: #333;
+            /* リンクの色をクリック後も変化なし */
+        }
+
+        .redtext {
+            color: #009999;
+        }
+
+        ul {
+            list-style-position: inside;
+            /* リストの位置調整 */
+        }
+
+        ul {
+            margin-left: 1em;
+            margin-bottom: 1em;
+            /* 適切な位置にインデントを追加 */
+        }
+
+        li {
+            text-indent: -2em;
+            padding-left: 1em;
+            margin-top: 0.75em;
+            margin-bottom: 0.75em;
+            /* 左側にインデント（スペース）を追加 */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 20px 20px;
+        }
+
+        .project {
+            display: flex;
+            align-items: flex-start;
+            /* テキストを画像の上部に揃える */
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .project img {
+            width: 150px;
+            height: 150px;
+            margin-right: 50px;
+            display: block;
+        }
+
+        .project div {
+            flex: 1;
+        }
+
+        h1,
+        h2 {
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+            color: #000;
+        }
+
+        .project h3 {
+            margin-top: 10px;
+            /* h3 の上部に余白を追加 */
+            margin-bottom: 5px;
+            /* h3 の下部に余白を追加 */
+            line-height: 1.4;
+            /* 行間も調整して読みやすく */
+            white-space: normal;
+            padding: 0px;
+        }
+
+        h3 {
+            margin-top: 20px;
+            /* h3 の上部に余白を追加 */
+            margin-bottom: 5px;
+            /* h3 の下部に余白を追加 */
+            line-height: 1.4;
+            /* 行間も調整して読みやすく */
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h3 a:visited {
+            color: #000;
+        }
+
+        section h3 a:hover {
+            color: #007BFF;
+        }
+
+        section h3 a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        section a:visited {
+            color: #cc3366;
+        }
+
+        section a:hover {
+            color: #FFC0CB;
+        }
+
+        section a {
+            text-decoration: none;
+            color: #cc3366;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        /* Aboutセクションのスタイル */
+        #about {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+
+        #about .about-text {
+            flex: 2;
+        }
+
+        #about .about-photo {
+            flex: 1;
+            text-align: center;
+        }
+
+        #about .about-photo img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+        }
+        #about p {
+            margin-top: 1.5ex;
+            margin-bottom: 1.5ex;
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .external-links,
+            .menu {
+                margin-bottom: 10px;
+            }
+
+            .project {
+                flex-direction: column;
+                /* アイコンとテキストを縦に並べる */
+                align-items: center;
+                /* 左揃えに変更（中央揃えも可） */
+                text-align: center;
+                padding: 0;
+                margin: 0;
+                text-indent: 0;
+            }
+
+            .project img {
+                display: block;
+                margin: 20px auto 0px;
+                padding: 0;
+                width: 75%;
+                min-width: 250px;
+                height: auto;
+            }
+
+            #research ul {
+                margin: 0;
+            }
+
+            #about {
+                flex-direction: column;
+                /* スマホでは縦に並べる */
+                align-items: center;
+                /* 中央揃え */
+                text-align: center;
+                /* テキストも中央揃え */
+            }
+
+            #about img {
+                margin-right: 0;
+                /* 縦並びのため右の余白を削除 */
+                margin-left: 0;
+                /* 縦並びのため右の余白を削除 */
+                margin-bottom: 20px;
+                /* テキストとの間に余白を追加 */
+                order: -1;
+            }
+
+            #about p {
+                order: 0;
+            }
+
+            h2 {
+                text-align: center;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- 外部リンク -->
+            <div class="external-links">
+                <a href="./CV-TANIAI.pdf" target="_blank" title="CV">
+                    <i class="ai ai-cv"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=-9J6RhYAAAAJ" target="_blank" title="Google Scholar">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+                <a href="http://dblp.uni-trier.de/pers/hd/t/Taniai:Tatsunori" target="_blank" title="DBLP">
+                    <i class="fas fa-database"></i>
+                </a>
+                <a href="https://www.researchgate.net/profile/Tatsunori_Taniai" target="_blank" title="ResearchGate">
+                    <i class="fab fa-researchgate"></i>
+                </a>
+                <a href="https://www.semanticscholar.org/author/Tatsunori-Taniai/2274390" target="_blank"
+                    title="Semantic Scholar">
+                    <i class="si si-semantic-scholar"></i>
+                </a>
+                <a href="https://github.com/t-taniai" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <!-- メニュー（右側） -->
+            <div class="menu">
+                <a href="index.html">Back to Profile</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- About Section -->
+        <section id="about">
+            <div class="about-text">
+                <h1>谷合 竜典 | 日本語コンテンツまとめ</h1>
+                <div class="profile">
+                    <p>オムロン サイニックエックス株式会社でシニアリサーチャーをしています。<br />詳細なプロフィールは<a href="index.html">メインページ</a>へ。</p>
+                    <p>ここでは日本語で発表した解説記事や講演スライドを中心に、役に立ちそうな情報をまとめています。</p>
+                    <p>物理×深層学習 や 3次元幾何×深層学習 などのトピックで<a href="https://www.omron.com/sinicx/internship/" target="_blank">インターンも募集</a>しています。
+                </div>
+            </div>
+            <div class="about-photo">
+                <img id="profile-img" src="./images/photo2025.jpg" alt="Tatsunori Taniai">
+                
+                <script>
+                    const images = [
+                    "./images/photo2025.jpg",
+                    "./images/photo2025.png",
+                    ];
+
+                    let currentIndex = 0;
+                    const imgElement = document.getElementById("profile-img");
+
+                    setInterval(() => {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    imgElement.src = images[currentIndex];
+                    }, 10000); // 3秒ごとに切り替え
+                </script>
+            </div>
+
+        </section>
+
+        <!-- Education, Experience, Awards Section -->
+        <section id="history">
+            <h2>解説記事</h2>
+            <ul>
+                <li>谷合 竜典 著, <strong><a href="jp/geometric_deep_learning_2025.pdf">幾何学的深層学習の分子・結晶構造解析への応用</a></strong><br />
+                    数理科学 (特集 データの幾何学と機械学習), Vol.63-10,
+                    pp.XX-XX, サイエンス社, 2025.
+                    <br />※ 出版社様より許可をいただいて公開しています。</li>
+                <li>谷合 竜典 著, <strong><a href="https://www.omron.com/jp/ja/technology/omrontechnics/2021/20211119-taniai.html" target="_blank">3次元画像計測におけるステレオマッチングの基礎から最先端まで</a></strong><br />
+                    OMRON TECHNICS: オムロングループ技術論文誌 53 (2), pp.246-260, 2021.
+                    </li>
+                <li>谷合 竜典・米谷 竜 著, <strong><a href="https://www.omron.com/jp/ja/technology/omrontechnics/2021/20211119-taniai-yonetani.html" target="_blank">機械学習を活用した経路計画技術</a></strong><br />
+                    OMRON TECHNICS: オムロングループ技術論文誌 53 (2), pp.184-193, 2021.
+                    </li>
+                
+            </ul>
+
+            <h2>講演スライド</h2>
+            <ul>
+                <li>谷合 竜典, <strong><a href="https://speakerdeck.com/taniai/geometric-modeling-of-crystal-structures-using-transformers" target="_blank">Geometric Modeling of Crystal Structures using Transformers</a></strong><br />
+                    AIPセミナー, RIKEN AIP 日本橋オフィス, 2025年6月5日.
+                </li>
+                <li>谷合 竜典, <strong><a href="https://speakerdeck.com/taniai/principled-ai-shen-ceng-xue-xi-shi-dai-niokeruke-ti-jie-jue-nofang-fa-lun" target="_blank">Principled AI ～深層学習時代における課題解決の方法論～</a></strong><br />
+                    電子情報通信学会 総合大会 企画セッション「パターン認識・メディア理解（PRMU）技術の産業応用」, 東京都市大学 世田谷キャンパス, 2025年3月23日.
+                </li>
+            </ul>
+
+            <h2>解説ブログ</h2>
+            <ul>
+                <li><strong><a href="https://medium.com/sinicx-ja/データ駆動型経路探索に関する研究がicml-2021に採択されました-575623fd96fe" target="_blank">データ駆動型経路探索に関する研究がICML 2021に採択されました</a></strong><br />
+                    Medium, 2021.</li>
+            </ul>
+
+            <h2>note連載：「伝わる論文」を書くための心得</h2>
+            <ul>
+                <li><strong><a href="https://note.com/taniai_phd/n/n36c4bd27fdeb" target="_blank">はじめに</a></strong></li>
+                <li><strong><a href="https://note.com/taniai_phd/n/nddf5301cfe75" target="_blank">論文の基本構成</a></strong></li>
+                <li><strong><a href="https://note.com/taniai_phd/n/neb5af39a8d26" target="_blank">Introductionの書き方</a></strong></li>
+                <li><strong><a href="https://note.com/taniai_phd/n/nf7873d69edc0" target="_blank">Title & Abstractの書き方</a></strong></li>
+                <li><strong><a href="https://note.com/taniai_phd/n/nd070fad03fcd" target="_blank">Related Workの書き方</a></strong></li>
+                <li><strong><a href="https://note.com/taniai_phd/n/nc170219a0b7c" target="_blank">Problem & Methodの書き方</a></strong></li>
+                <li><strong><a href="https://note.com/taniai_phd/n/n5d08f089852c" target="_blank">Experimentsの書き方</a></strong></li>
+                <li><strong><a href="https://note.com/taniai_phd/n/nb17e4b267ff7" target="_blank">Discussionの書き方</a></strong></li>
+                <li><strong><a href="https://note.com/taniai_phd/n/n7227e1599d25" target="_blank">Conclusionsの書き方</a></strong></li>
+            </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tatsunori Taniai. All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+</html>
